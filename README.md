@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-# adt
-<<<<<<< HEAD
-Apigee Edge Deploy Tool
-=======
->>>>>>> 284fe2e (first commit)
-=======
 # ADT
 ## _Apigee Edge Deployment Tool_
 
