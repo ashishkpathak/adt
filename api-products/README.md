@@ -1,8 +1,8 @@
-## API PRODUCT
+# API PRODUCT
 Creates an API Product using one of the methods described below. The API product created will not be accessible at runtime until it is deployed to an environment.
 
 
-# Usage
+## USAGE
 
 ```sh
 adt create product --help
@@ -20,7 +20,7 @@ Usage: adt create product [-hV] [-i=<input>] [-n=<name>] [-x=<hostPort>]
                       Use http proxy (host:port)
 ```                            
   
-## Import an API Product Configuration
+### Import an API Product Configuration
 
 Import an API proxy configuration file on your local machine to your organization on Edge by doing the following.
 

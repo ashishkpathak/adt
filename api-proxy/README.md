@@ -1,5 +1,7 @@
-## API PROXY
+# API PROXY
+## CREATE
 Creates an API Proxy using one of the methods described below. The API proxy created will not be accessible at runtime until it is deployed to an environment.
+
 
 
 ### Usage
@@ -55,3 +57,33 @@ adt create apiproxy -n api-httpbin-proxy --proxy-dir ../api-httpbin-proxy/
 ```
 
 #### Import a zipped bundle
+
+
+## UPDATE
+
+Updates an existing revison of an API proxy by uploading an API proxy configuration bundle as a zip file or apiproxy directory from your local machine.
+### USAGE
+
+```sh
+adt update apiproxy --help
+Operation on API Proxy.
+Usage: adt update apiproxy [-hV] [-i=<input>] -n=<name>
+  -h, --help            Show this help message and exit.
+  -i, --input=<input>   Location of apiproxy directory.
+  -n, --name=<name>     The name of API proxy.
+  -V, --version         Print version information and exit.
+
+  ```
+#### Update using a zipped bundled
+
+#### Update using root of apiproxy directory, containing the proxy.
+
+
+
+## DELETE
+
+Deletes an API proxy and all associated endpoints, policies, resources, and revisions. The API proxy must be undeployed before you can delete it.
+
+### USAGE
+
+
