@@ -1,4 +1,4 @@
-## ReadMe
+## API PRODUCT
 Creates an API Product using one of the methods described below. The API product created will not be accessible at runtime until it is deployed to an environment.
 
 
@@ -26,18 +26,16 @@ Import an API proxy configuration file on your local machine to your organizatio
 
 
 ```sh
-
-adt create product -n <api-proxy-name> --product-config <product-config-location>
-
+adt create product -n <api-product-name> --product-config <product-config-location>
 ```
 
 Example
 
 ```sh
-adt create product -n product-httpbin-v1 --proxy-dir ../apiproduct-httpbin-v1/apiproduct-httpbin-v1.json
+adt create product -n product-httpbin-v1 --product-config ../apiproduct-httpbin-v1/apiproduct-httpbin-v1.json
 ```
 
-  The structure of apiproduct-httpbin-v1 as an example is
+The structure of apiproduct-httpbin-v1 as an example is
 
 ```sh
 ├── apiproduct-httpbin-v1
@@ -55,12 +53,12 @@ adt create product -n product-httpbin-v1 --proxy-dir ../apiproduct-httpbin-v1/ap
       "value": "public"
     },
     {
-      "name": "cost",
-      "value": "free"
+      "name": "scope",
+      "value": "read write"
     },
     {
-      "name": "working",
-      "value": "nothing"
+      "name": "quota",
+      "value": "10tps"
     }
   ],
   "description": "api product httpbin v1 ",

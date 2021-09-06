@@ -1,4 +1,4 @@
-## ReadMe
+## API PROXY
 Creates an API Proxy using one of the methods described below. The API proxy created will not be accessible at runtime until it is deployed to an environment.
 
 
