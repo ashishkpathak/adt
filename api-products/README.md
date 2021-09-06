@@ -1,57 +1,77 @@
 ## ReadMe
-Creates an API Proxy using one of the methods described below. The API proxy created will not be accessible at runtime until it is deployed to an environment.
+Creates an API Product using one of the methods described below. The API product created will not be accessible at runtime until it is deployed to an environment.
 
 
 # Usage
 
 ```sh
-adt create apiproxy --help
+adt create product --help
 ```
 
 ```sh
-Operation on API Proxy.
-Usage: adt create apiproxy [-dhV] [-b=<bundle>] [-e=<env>] -n=<name>
-                           [-p=<input>] [-x=<hostPort>]
-  -b, --bundled-zip=<bundle>
-                            Location of bundled proxy zip file.
-  -d, --deploy              Optionally deploy the proxy.
-  -e, --env=<env>           Environment to deploy into.
-  -h, --help                Show this help message and exit.
-  -n, --api-name=<name>     The name of API proxy.
-  -p, --proxy-dir=<input>   Location of apiproxy directory.
-  -V, --version             Print version information and exit.
+Operation on API product.
+Usage: adt create product [-hV] [-i=<input>] [-n=<name>] [-x=<hostPort>]
+  -h, --help          Show this help message and exit.
+  -i, --product-config=<input>
+                      Location of product config file.
+  -n, --name=<name>   The name of product.
+  -V, --version       Print version information and exit.
   -x, --http-proxy=<hostPort>
-                            Use http proxy (host:port)
+                      Use http proxy (host:port)
 ```                            
   
-## Import an API Proxy Bundle
+## Import an API Product Configuration
 
-Import an API proxy configuration bundle stored as a zip file on your local machine to your organization on Edge by doing the following.
+Import an API proxy configuration file on your local machine to your organization on Edge by doing the following.
 
 
 ```sh
 
-adt create apiproxy -n <api-proxy-name> --proxy-dir <proxy-location>
+adt create product -n <api-proxy-name> --product-config <product-config-location>
 
 ```
 
 Example
 
 ```sh
-adt create apiproxy -n api-httpbin-proxy --proxy-dir ../api-httpbin-proxy/
+adt create product -n product-httpbin-v1 --proxy-dir ../apiproduct-httpbin-v1/apiproduct-httpbin-v1.json
 ```
 
-  The structure of api-httpbin-proxy as an example is
+  The structure of apiproduct-httpbin-v1 as an example is
 
 ```sh
-├── api-httpbin-v1
-│   └── apiproxy
-│       ├── api-httpbin-v1.xml
-│       ├── policies
-│       ├── proxies
-│       │   └── default.xml
-│       └── targets
-│           └── default.xml
+├── apiproduct-httpbin-v1
+│   └── apiproduct-httpbin-v1.json
 ```
 
-## Import a zipped bundle
+```json
+{
+  "apiResources": [
+    "/"
+  ],
+  "approvalType": "auto",
+  "attributes": [{
+      "name": "access",
+      "value": "public"
+    },
+    {
+      "name": "cost",
+      "value": "free"
+    },
+    {
+      "name": "working",
+      "value": "nothing"
+    }
+  ],
+  "description": "api product httpbin v1 ",
+  "displayName": "api product httpbin v1",
+  "environments": [
+    "test"
+  ],
+  "name": "product-httpbin-v1",
+  "proxies": [
+    "api-httpbin-v1"
+  ],
+  "scopes": []
+}
+```
