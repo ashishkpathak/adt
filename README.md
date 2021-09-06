@@ -9,27 +9,27 @@ ADT is command-line tool for deploying Apigee resources like API proxies, API pr
 
 ADT can be used to create, deploy, list.
 
-- API Proxy
-- API Products
-- Shared Flows
-- KVM
-- Environments
-- Developers
-- Developer Apps
-- Company Apps
-- Users
-- Roles
-- Alerts
-- Analytics
-- Reports
-- Cache
-- Target Servers
-- Policies
-- Resources
-- Virtual Hosts
-- Stats
-- Organizations
-- Audit
+- [API Proxy](api-proxy)
+- [API Products](api-products)
+- [Shared Flows](shared-flows)
+- [KVM](key-value-maps)
+- [Environments](environments)
+- [Developers](developers)
+- [Developer Apps](apps)
+- [Company Apps](apps)
+- [Users](users)
+- [[Roles](roles)
+- [Alerts](alerts)
+- [Analytics](analytics)
+- [Reports](reports)
+- [Cache](cache)
+- [Target Servers](target-servers)
+- [Policies](policies)
+- [Resources](resources)
+- [Virtual Hosts](virtual-hosts)
+- [Stats](stats)
+- [Organizations](organizations)
+- [Audit](audit)
 - ✨Magic ✨
 
 ## Features
