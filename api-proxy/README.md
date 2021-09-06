@@ -2,7 +2,7 @@
 Creates an API Proxy using one of the methods described below. The API proxy created will not be accessible at runtime until it is deployed to an environment.
 
 
-# Usage
+### Usage
 
 ```sh
 adt create apiproxy --help
@@ -24,7 +24,7 @@ Usage: adt create apiproxy [-dhV] [-b=<bundle>] [-e=<env>] -n=<name>
                             Use http proxy (host:port)
 ```                            
   
-## Import an API Proxy Bundle
+#### Import an API Proxy Bundle
 
 Import an API proxy configuration bundle stored as a zip file on your local machine to your organization on Edge by doing the following.
 
@@ -54,4 +54,4 @@ adt create apiproxy -n api-httpbin-proxy --proxy-dir ../api-httpbin-proxy/
 │           └── default.xml
 ```
 
-## Import a zipped bundle
+#### Import a zipped bundle
