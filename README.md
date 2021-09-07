@@ -48,18 +48,12 @@ As [Alexender Pope] writes
 
 ## Tech
 
-Dillinger uses a number of open source projects to work properly:
 
 - [API Proxy](create) - API Proxies.
 - [API Product](create) - Products.
-- [markdown-it] - Markdown parser done right. Fast and easy to extend.
-- [Twitter Bootstrap] - great UI boilerplate for modern web apps
-- [Breakdance](https://breakdance.github.io/breakdance/) - HTML
-to Markdown converter
-- [jQuery] - duh
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
+
+
 
 ## Installation
 
@@ -94,44 +88,12 @@ First Tab:
 node app
 ```
 
-Second Tab:
-
-```sh
-gulp watch
-```
-
-(optional) Third:
-
-```sh
-karma test
-```
 
 #### Building for source
 
 For production release:
 
-```sh
-gulp build --prod
-```
 
-Generating pre-built zip archives for distribution:
-
-```sh
-gulp build dist --prod
-```
-
-
-```sh
-docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger <youruser>/dillinger:${package.json.version}
-```
-
-> Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
-
-Verify the deployment by navigating to your server address in
-your preferred browser.
-
-```sh
-127.0.0.1:8000
 ```
 
 ## License
