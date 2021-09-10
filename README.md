@@ -54,39 +54,25 @@ As [Alexender Pope] writes
 
 
 
-
 ## Installation
 
-ADT requires [JRE](https://openjdk.java.net/) v11+ to run.
+ADT
 
 Install the command line tool and init your environment.
 
 ```sh
-cd adt
-$adt> adt init --login
+adt init --login
 ```
 
 For production environments...
 
-```sh
-npm install --production
-NODE_ENV=production node app
-```
 
 
 ## Development
 
 Want to contribute? Great!
 
-ADT uses Java 11.
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-
-```sh
-node app
-```
+ADT
 
 
 #### Building for source
