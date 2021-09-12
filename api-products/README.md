@@ -2,7 +2,9 @@
 Creates an API Product using one of the methods described below. The API product created will not be accessible at runtime until it is deployed to an environment.
 
 
-## USAGE
+## CREATE PRODUCT
+
+### USAGE
 
 ```sh
 adt create product --help
@@ -20,7 +22,7 @@ Usage: adt create product [-hV] [-i=<input>] [-n=<name>] [-x=<hostPort>]
                       Use http proxy (host:port)
 ```                            
   
-### Import an API Product Configuration
+#### Import an API Product Configuration
 
 Import an API proxy configuration file on your local machine to your organization on Edge by doing the following.
 
@@ -73,3 +75,32 @@ The structure of apiproduct-httpbin-v1 as an example is
   "scopes": []
 }
 ```
+
+Warning:
+
+    If you don't specify an API proxy in the request body, any app associated with the API product can make calls to any API in your entire organization.
+
+    If you don't specify an environment in the request body, the API product allows access to all environments.
+
+
+## UPDATE PRODUCT
+
+Updates an existing API product.
+
+
+The API product name required in the request is the internal name of the product, not the display name. While they may be the same, it depends on whether the API product was created via UI or API. View the list of API products to verify the internal name.
+
+### USAGE
+
+Note: You must include all required values, whether or not you are updating them, as well as any optional values that you are updating.
+
+```sh
+adt update product -n <api-product-name> --product-config <product-config-location>
+```
+
+Example
+
+```sh
+adt update product -n product-httpbin-v1 --product-config ../apiproduct-httpbin-v1/apiproduct-httpbin-v1.json
+```
+
