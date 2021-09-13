@@ -97,6 +97,46 @@ Usage: adt update apiproxy [-hV] -n=<name> -p=<input> -r=<revision>
 adt update apiproxy -n api-httpbin-proxy-v1 -p ../api-httpbin-proxy-v1.zip -r 2
 ```
 
+Sample response:
+
+```json
+{
+  "type" : "Application",
+  "targets" : [ "default" ],
+  "basepaths" : [ "/api/httpbin/v1" ],
+  "configurationVersion" : {
+    "majorVersion" : 4,
+    "minorVersion" : 0
+  },
+  "contextInfo" : "Revision 1 of application -NA-, in organization -NA-",
+  "createdAt" : 1631169016214,
+  "createdBy" : "deploytool@enterprise.com",
+  "description" : "Demo httpbin proxy.",
+  "displayName" : "api-httpbin-proxy-v1",
+  "entityMetaDataAsProperties" : {
+    "lastModifiedBy" : "deploytool@enterprise.com",
+    "createdBy" : "deploytool@enterprise.com",
+    "lastModifiedAt" : 1631504642400,
+    "subType" : "null",
+    "createdAt" : 1631169016214,
+    "bundle_type" : "zip"
+  },
+  "lastModifiedAt" : 1631504642400,
+  "lastModifiedBy" : "deploytool@enterprise.com",
+  "manifestVersion" : "SHA-512:69d3bd8cec45692725320422fd8343edf7497f3e7f843a3863cbfaa8f885dc1bf7d25aa3ae310475a7fa43b3eefee5d0843e93029d1a2b8d9a3faf1f90b8c0e6",
+  "policies" : [ ],
+  "proxies" : [ "default" ],
+  "resources" : [ ],
+  "revision" : "1",
+  "sharedFlows" : [ ],
+  "spec" : "",
+  "proxyEndpoints" : [ "default" ],
+  "targetServers" : [ ],
+  "targetEndpoints" : [ "default" ],
+  "name" : "api-httpbin-proxy-v1"
+}
+```
+
 #### Update using apiproxy directory.
 
 ```sh
@@ -152,8 +192,6 @@ adt list apiproxy -n api-httpbin-proxy -r 1 -o /tmp
 ```
 
 
-
-
 ## DELETE API PROXY
 
 Deletes an API proxy and all associated endpoints, policies, resources, and revisions. The API proxy must be undeployed before you can delete it. Refer to undeploy API proxy documentation.
@@ -172,11 +210,14 @@ Usage: adt delete apiproxy [-hV] -n=<name> [-r=<revision>]
   ```
 #### Delete API Proxy (all revisions)
 
-
+```sh
+adt delete apiproxy --name api-httpbin-proxy
+```
 
 #### Delete API Proxy revision
 
-
-
+```sh
+adt delete apiproxy --name api-httpbin-proxy --revision 2 
+```
 
 
