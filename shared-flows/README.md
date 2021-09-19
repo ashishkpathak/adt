@@ -223,3 +223,51 @@ adt delete shared-flow --name sf-quota --revision 2
 ```
 
 
+## DEPLOY shared flow
+
+### Usage
+```sh
+Usage: adt deploy shared-flow [-hV] [--delay=<delay>] -e=<env> -n=<name> [--override=<override>] -r=<revision> [-x=<hostPort>]
+
+      --delay=<delay>   Time interval, in seconds, to wait before undeploying the currently deployed API proxy revision. Use this setting in conjunction with override parameter to minimize
+                          the impact of deployment on in-flight transactions and the occurrence of 502 Bad Gateway or 504 Gateway.
+  -e, --env=<env>       Environment to deploy into.
+  -h, --help            Show this help message and exit.
+  -n, --shared-flow-name=<name>
+                        The name of shared flow.
+      --override=<override>
+                        Flag that specifies whether to force the deployment of the new revision over the currently deployed revision. Set this parameter to true to provide seamless
+                          deployment. In this case, the existing revision remains deployed until the new revision is fully deployed. Use in conjunction with the delay parameter to control
+                          undeployment and minimize the impact on in-flight transaction. If set to false, you must undeploy the currently deployed revision before deploying the new revision.
+  -r, --revision=<revision>
+                        Revision of shared flow to deploy.
+  -V, --version         Print version information and exit.
+  -x, --http-proxy=<hostPort>
+                        Use http proxy (host:port)
+```
+
+```sh
+adt deploy shared-flow -n <shared-flow-name> -r <revision> -e <environment>
+```
+
+## UNDEPLOY shared flow
+
+### Usage
+
+```sh
+Usage: adt undeploy shared-flow [-hV] -e=<env> -n=<name> -r=<revision> [-x=<hostPort>]
+
+  -e, --env=<env>     Environment details.
+  -h, --help          Show this help message and exit.
+  -n, --name=<name>   The name of proxy or shared flow.
+  -r, --revision=<revision>
+                      The revision details.
+  -V, --version       Print version information and exit.
+  -x, --http-proxy=<hostPort>
+                      Use http proxy (host:port)
+
+```
+
+```sh
+adt undeploy shared-flow -n <shared-flow> -e <env> -r <revision>
+```

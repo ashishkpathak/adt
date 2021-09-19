@@ -76,10 +76,9 @@ The structure of apiproduct-httpbin-v1 as an example is
 }
 ```
 
-Warning:
+**Warning:**
 
     If you don't specify an API proxy in the request body, any app associated with the API product can make calls to any API in your entire organization.
-
     If you don't specify an environment in the request body, the API product allows access to all environments.
 
 
