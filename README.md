@@ -93,10 +93,8 @@ Exit Codes:
 
 #### Building for source
 
-For production release:
+Contact authors(me@pathak.id.au).
 
-
-```
 
 ## License
 
