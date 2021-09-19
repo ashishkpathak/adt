@@ -6,6 +6,25 @@ You can set up a maximum of 20 alerts per organization. The alert settings apply
 
 Edge imposes a quota on this API of 60 calls per minute per organization. This quota is calculated by multiplying 20 (number of allowed alerts) * 3 = 60 calls.
 
+## LIST ALERT
+
+Lists alerts for an organization.
+Note: Edge imposes a quota on this API of 60 calls per minute per organization. This quota is calculated by multiplying 20 (number of allowed alerts) * 3 = 60 calls.
+
+Use Get Alerts to get the UUIDs of all alerts for an organization.
+
+### USAGE
+```sh
+adt list alert
+```
+
+Get Alert with ID
+
+```sh
+adt list alert --alert-id <alert-id>
+```
+
+
 ## CREATE ALERT
 
 ### USAGE
