@@ -1,6 +1,6 @@
-# Contributing to the Firebase Android Quickstarts
+# Contributing to the Apigee Edge Deployment Tool
 
-We'd love for you to contribute to our source code and to make the Firebase Android Quickstarts even better than it is today! Here are the guidelines we'd like you to follow:
+We'd love for you to contribute to our source code and to make the ADT Quickstarts even better than it is today! Here are the guidelines we'd like you to follow:
 
  - [Code of Conduct](#coc)
  - [Question or Problem?](#question)
