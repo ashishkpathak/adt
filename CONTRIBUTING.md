@@ -89,7 +89,7 @@ Before you submit your pull request consider the following guidelines:
     $ git push origin my-fix-branch
     ```
 
-* In GitHub, send a pull request to `firebase-quickstart-android:master`.
+* In GitHub, send a pull request to `adt:main`.
 * If we suggest changes then:
   * Make the required updates.
   * Rebase your branch and force push to your GitHub repository (this will update your Pull Request):
@@ -142,5 +142,4 @@ changes to be accepted, the CLA must be signed. It's a quick process, we promise
 *This guide was inspired by the [AngularJS contribution guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md).*
 
 [github]: https://github.com/ashishkpathak/adt
-[stackoverflow]: http://stackoverflow.com/questions/tagged/firebase
 [global-gitignore]: https://help.github.com/articles/ignoring-files/#create-a-global-gitignore
