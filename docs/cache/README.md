@@ -8,8 +8,11 @@ Creates a cache in an environment. Caches are created per environment. For data 
 adt create cache --help
 ```
 
+Operation on cache.
+
 ```sh
-Operation on App.
+<ToDo>
+
 ```
 
 #### Import a cache config.
