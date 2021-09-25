@@ -148,13 +148,13 @@ adt list app
 ```
 
 
-``sh
+```sh
 adt list app -e
 ```
 
 
 ```sh
-adt list -
+adt list 
 ```
 
 
