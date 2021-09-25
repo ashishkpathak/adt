@@ -1,7 +1,7 @@
 # ADT
 ## _Apigee Edge Deployment Tool_
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+[![Build status](https://ci.appveyor.com/api/projects/status/5n0s6lbigi8wji96/branch/main?svg=true)](https://ci.appveyor.com/project/ashishkpathak/adt/branch/main)
 
 [![Build status](https://ci.appveyor.com/api/projects/status/5n0s6lbigi8wji96?svg=true)](https://ci.appveyor.com/project/ashishkpathak/adt)
 
