@@ -17,21 +17,22 @@ ADT can be used to create, deploy, list.
 - [Developers](docs/developers)
 - [Developer Apps](docs/apps)
 - [Company Apps](docs/apps)
-- [Users](docs/users)
-- [Roles](docs/roles)
-- [Alerts](docs/alerts)
-- [Analytics](docs/analytics)
-- [Reports](docs/reports)
+- [Users^](docs/users)
+- [Roles^](docs/roles)
+- [Alerts^](docs/alerts)
+- [Analytics^](docs/analytics)
+- [Reports^](docs/reports)
 - [Cache](docs/cache)
 - [Target Servers](docs/target-servers)
-- [Policies](docs/policies)
-- [Resources](docs/resources)
-- [Virtual Hosts](docs/virtual-hosts)
-- [Stats](docs/stats)
-- [Organizations](docs/organizations)
-- [Audit](docs/audit)
+- [Policies^](docs/policies)
+- [Resources^](docs/resources)
+- [Virtual Hosts^](docs/virtual-hosts)
+- [Stats^](docs/stats)
+- [Organizations^](docs/organizations)
+- [Audit^](docs/audit)
 - ✨Magic ✨
 
+[^] Contact author to enable these feature.
 ## Features
 
 - Create an empty API Proxy template, have it created and deployed to Apigee Edge.
@@ -40,18 +41,10 @@ ADT can be used to create, deploy, list.
 - Query OAuth2.0 tokens
 - Export proxies, shared-flows, products.
 
-As [Alexender Pope] writes
+[Alexender Pope]
 
 > Nature and Nature's laws lay hid in night:
 > God said, Let Newton be! and all was light.
-
-
-## Tech
-
-
-- [API Proxy](create) - API Proxies.
-- [API Product](create) - Products.
-
 
 
 ## Installation
@@ -64,8 +57,7 @@ Install the command line tool and init your environment.
 adt init --login
 ```
 
-For production environments...
-
+For production environments.
 
 
 ## Help

@@ -144,7 +144,7 @@ Sample response:
 adt update shared-flow -n sf-quota-v1 -p ../sf-quota-v1 -r 2
 ```
 
-### Update a shared flow attached to flow hook.
+### Update a shared flow. Attach to flow hook.
 
 Attaches a shared flow to the specified flow hook. Valid values for flow hook include:
 
@@ -154,8 +154,9 @@ Attaches a shared flow to the specified flow hook. Valid values for flow hook in
     PostProxyFlowHook
 
 ```sh
-adt update shared-flow -f PreProxyFlowHook -p ../fh-quota
+adt update shared-flow -f PreProxyFlowHook -p ../fh-quota-config-location
 ```
+Example of fh-quota-config.json 
 
 ```json
 {
@@ -165,6 +166,16 @@ adt update shared-flow -f PreProxyFlowHook -p ../fh-quota
 }
 ```
 
+Successful response: 
+```json
+
+{
+  "continueOnError": true,
+  "sharedFlow": "mySharedFlow",
+  "state": "deployed"
+}
+
+```
 ## LIST shared flow
 
 ### USAGE
@@ -260,6 +271,27 @@ adt delete shared-flow --name sf-quota
 adt delete shared-flow --name sf-quota --revision 2 
 ```
 
+#### Detach a shared flow from flow hook.
+
+Detaches a shared flow from the specified flow hook. Valid values for flow hook include:
+
+    PreProxyFlowHook
+    PreTargetFlowHook
+    PostTargetFlowHook
+    PostProxyFlowHook If no shared flow is attached, this will not return an error. Only one shared flow at a time can be attached to a flow hook.
+
+```sh
+adt delete shared-flow -f <flow-hook>
+```
+Sample response
+
+```json
+{
+  "continueOnError": true,
+  "sharedFlow": "mySharedFlow",
+  "state": "undeployed"
+}
+```
 
 ## DEPLOY shared flow
 

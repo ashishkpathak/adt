@@ -104,6 +104,49 @@ Note: You must include all current attribute and callback values in the payload;
 If you want to set the consumer key and consumer secret rather than having Edge generate them randomly, see Import existing consumer keys and secrets. (However, that API does not let you set an expiration time.)
 
 
+### UPDATE App Key
+
+## USAGE
+
+```sh
+Operation on App Keys.
+Usage: adt update app key [-hV] [--approve] [--company] [--revoke] [-c=<productConfig>] -i=<id> -k=<key> -n=<appName> [-p=<product>] [-t=<status>] [-x=<proxyHost>]
+ADT is a fast, secure and reliable way to manage your proxies on Apigee.
+      --approve              Approve the API Key or API Product. No other parameter required.
+  -c, --product-config=<productConfig>
+                             The config containing the attributes and products.
+      --company              Is company app.
+  -h, --help                 Show this help message and exit.
+  -i, --id=<id>              The email address if developer app or company name if company app.
+  -k, --key=<key>            The client  key
+  -n, --app-name=<appName>   The app name.
+  -p, --api-product=<product>
+                             The api product.
+      --revoke               Revoke the API Key or API Product. No other parameter required.
+  -V, --version              Print version information and exit.
+  -x, --proxy=<proxyHost>    Host:Port of the proxy server to use.
+```
+
+To revoke or approve App key. This would revoke the consumer key or app <app-name> of developer <developer-email>
+
+```sh 
+adt update app key -i <developer-email> -n <app-name> -k <consumer-key>  --revoke
+```
+
+To revoke or approve an api-products associated with the app key.
+
+```sh
+adt update app key -i <developer-email> -n <app-name> -k <consumer-key> -p <api-product> --revoke 
+```
+
+To update api-products or attributes associated with the app key.
+
+```sh
+adt update app key -i <developer-email> -n <app-name> -k <consumer-key> --product-config <product-confiig>
+```
+
+
+
 ## LIST App
 
 
@@ -154,12 +197,11 @@ adt list app -e
 
 
 ```sh
-adt list 
+adt list app -i <developer-email-address>
 ```
 
 
 ## LIST App Key (Credentials)
-
 
 ### USAGE
 
@@ -177,5 +219,11 @@ ADT is a fast, secure and reliable way to manage your proxies on Apigee.
   -t, --status=<status>      The status of app. Approved or Revoked
   -V, --version              Print version information and exit.
   -x, --proxy=<proxyHost>    Host:Port of the proxy server to use.
+```
+
+### List keys/credentials for a app.
+
+```sh
+adt list app key -i <developer-email> -n <app-name> -k <customer-key>
 ```
 
