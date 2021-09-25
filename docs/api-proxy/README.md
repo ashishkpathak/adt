@@ -143,7 +143,7 @@ Sample response:
 adt update apiproxy -n api-httpbin-proxy-v1 -p ../api-httpbin-proxy-v1 -r 2
 ```
 
-## QUERY API PROXY
+## LIST API PROXY
 
 ### USAGE
 
@@ -264,6 +264,7 @@ Usage: adt undeploy apiproxy [-hV] [-e=<env>] -n=<name> [-r=<revision>] [-x=<hos
                       Use http proxy (host:port)
 
 ```
+To undeploy an apiproxy with revision <revision> from environment <env>.
 
 ```sh
 adt undeploy apiproxy -n <apiproxy> -e <env> -r <revision>

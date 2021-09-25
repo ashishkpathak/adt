@@ -88,15 +88,6 @@ Optionally the created proxy can be deployed to environment 'test'. For example
 adt create app -n api-httpbin-proxy --proxy-dir ../api-httpbin-proxy.zip -d -e test
 ```
 
-## QUERY App
-
-Lists all apps created by a developer in an organization. Optionally, you can expand the response to include the profile for each app.
-
-With Apigee Edge for Public Cloud:
-
-    A maximum of 100 developer apps are returned per API call.
-    You can paginate the list of developer apps returned using the startKey and count query parameters.
-
 ## UPDATE App
 Approves, revokes, or generates an API key for a developer app.
 
@@ -112,6 +103,79 @@ Note: You must include all current attribute and callback values in the payload;
 
 If you want to set the consumer key and consumer secret rather than having Edge generate them randomly, see Import existing consumer keys and secrets. (However, that API does not let you set an expiration time.)
 
+
+## LIST App
+
+
+Lists all apps created by a developer in an organization. Optionally, you can expand the response to include the profile for each app.
+
+With Apigee Edge for Public Cloud:
+
+    A maximum of 100 developer apps are returned per API call.
+    You can paginate the list of developer apps returned using the startKey and count query parameters.
 ### USAGE
 
+```sh
+Operation on App.
+Usage: adt list app [-AehV] [--company] [-a=<attribute>] [--app-id=<appId>] [-c=<count>] [-i=<id>] [-n=<name>] [-s=<startKey>] [-t=<status>] [-v=<attributeValue>] [-x=<proxyHost>] [COMMAND]
+
+  -a, --attribute-name=<attribute>
+                            The app attribute name.
+  -A, --list-attributes     List the attributes.
+      --app-id=<appId>      The App Id
+  -c, --count=<count>       The number of apps to return.
+      --company             Is company app.
+  -e, --expand              To view expanded form of app.
+  -h, --help                Show this help message and exit.
+  -i, --id=<id>             The email address if developer app or company name if company app.
+  -n, --name=<name>         The app name.
+  -s, --start-key=<startKey>
+                            The AppId to start displaying from.
+  -t, --status=<status>     The status of app. Approved or Revoked
+  -v, --attribute-value=<attributeValue>
+                            The app attribute value.
+  -V, --version             Print version information and exit.
+  -x, --proxy=<proxyHost>   Host:Port of the proxy server to use.
+Commands:
+  key  Operation on App Keys.
+```
+
+List all apps (developer app), for company apps pass in --company  option. This would return the app-Id of the app.  To see the expanded form use the expanded -e option. To  list them with status approved or revoked, use the -t option.
+
+
+```sh
+adt list app 
+```
+
+
+``sh
+adt list app -e
+```
+
+
+```sh
+adt list -
+```
+
+
+## LIST App Key (Credentials)
+
+
+### USAGE
+
+```sh
+Operation on App Keys.
+Usage: adt list app key [-hV] [--company] -i=<id> -k=<key> -n=<appName> [-p=<product>] [-t=<status>] [-x=<proxyHost>]
+ADT is a fast, secure and reliable way to manage your proxies on Apigee.
+      --company              Is company app.
+  -h, --help                 Show this help message and exit.
+  -i, --id=<id>              The email address if developer app or company name if company app.
+  -k, --key=<key>            The key
+  -n, --app-name=<appName>   The app name.
+  -p, --api-product=<product>
+                             The api product.
+  -t, --status=<status>      The status of app. Approved or Revoked
+  -V, --version              Print version information and exit.
+  -x, --proxy=<proxyHost>    Host:Port of the proxy server to use.
+```
 

@@ -103,3 +103,43 @@ Example
 adt update product -n product-httpbin-v1 --product-config ../apiproduct-httpbin-v1/apiproduct-httpbin-v1.json
 ```
 
+## LIST PRODUCT
+
+### USAGE
+
+```sh
+Operation on product.
+Usage: adt list product [-AehV] [-a=<attribute>] [-c=<count>] [-n=<name>] [-s=<startKey>] [-v=<attributeValue>] [-x=<proxyHost>]
+ADT is a fast, secure and reliable way to manage your proxies on Apigee.
+  -a, --attribute-name=<attribute>
+                            The product attribute name.
+  -A, --list-attributes     List the attributes.
+  -c, --count=<count>       The number of products to return in API call.
+  -e, --expand              To view expanded form of products
+  -h, --help                Show this help message and exit.
+  -n, --name=<name>         The name of API Product.
+  -s, --start=<startKey>    The name of API product to start displaying from.
+  -v, --attribute-value=<attributeValue>
+                            The product attribute value
+  -V, --version             Print version information and exit.
+  -x, --proxy=<proxyHost>   Host:Port of the proxy server to use.
+```
+
+List all products in an organization. This returns the name of the products, to see them in expanded form use the -e option.
+
+```sh 
+adt product list
+```
+
+Optionally list products with an attribute or attribute value or both
+
+```sh
+adt product list -a <attribute-name> -v <attribute-value> -c <number of products to return>
+```
+
+List a product with a name.
+
+```sh
+adt product list -n <product-name>
+```
+
