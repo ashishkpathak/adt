@@ -49,7 +49,7 @@ adt create alert -n <api-product-name> --product-config <product-config-location
 Example
 
 ```sh
-adt create product -n "API 5xx error rate" --alert-config ../alert-httpbin-v1/alert-httpbin-v1.json
+adt create alert -n "API 5xx error rate" --alert-config ../alert-httpbin-v1/alert-httpbin-v1.json
 ```
 
 The structure of alert-httpbin-v1 as an example is

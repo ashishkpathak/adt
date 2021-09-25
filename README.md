@@ -32,7 +32,7 @@ ADT can be used to create, deploy, list.
 - [Audit^](docs/audit)
 - ✨Magic ✨
 
-[^] Contact author to enable these feature.
+[^] Contact author for these features.
 ## Features
 
 - Create an empty API Proxy template, have it created and deployed to Apigee Edge.
