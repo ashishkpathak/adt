@@ -15,6 +15,7 @@ adt list organization -o <organization-name>
 ```
 
 Typical response
+
 ```json
 
 {
@@ -79,7 +80,7 @@ After you create the organization, you must:
 Edge provides scripts and other tools that you can use as an alternative to making API calls directly. For example, for Edge 4.16.05 and later, see Creating an organization, environment, and virtual host.
 
 ```sh
-adt create organization --org-config <org-config-json>
+    adt create organization --org-config <org-config-json-location>
 ```
 
 org-config-json
@@ -181,3 +182,20 @@ adt update organization -o <organization-name> -r <region-name> -p <pod-name>
 
 ## DELETE ORGANIZATION
 
+Deletes an organization.
+
+Notes:
+
+    Apigee Edge for Private Cloud only. If you are using Apigee Edge for Public Cloud, contact Apigee Support for assistance.
+    This API cannot be executed using the Try this API panel.
+
+You can only delete an organization after you have:
+
+    Deleted all virtual hosts in all environments in the organization
+    Deleted all environments in the organization
+    Disassociated the organization from all pods
+
+
+```sh
+adt delete organization -o <organization-name>
+```

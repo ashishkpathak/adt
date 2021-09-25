@@ -144,7 +144,28 @@ Sample response:
 adt update shared-flow -n sf-quota-v1 -p ../sf-quota-v1 -r 2
 ```
 
-## QUERY shared flow
+### Update a shared flow attached to flow hook.
+
+Attaches a shared flow to the specified flow hook. Valid values for flow hook include:
+
+    PreProxyFlowHook
+    PreTargetFlowHook
+    PostTargetFlowHook
+    PostProxyFlowHook
+
+```sh
+adt update shared-flow -f PreProxyFlowHook -p ../fh-quota
+```
+
+```json
+{
+  "FlowHook": {
+    "SharedFlow": "mySharedFlow"
+  }
+}
+```
+
+## LIST shared flow
 
 ### USAGE
 
@@ -192,6 +213,23 @@ The below would download a revision of shared-flow to /tmp location.
 ```sh
 adt list apiproxy -n sf-quota -r 1 -o /tmp
 ```
+## LIST shared flow attached to flow hooks
+
+```sh
+adt list shared-flow --flow-hook <FlowHook>
+```
+Can provide any of the following flow hooks
+  PreProxyFlowHook
+  PreTargetFlowHook
+  PostTargetFlowHook
+  PostProxyFlowHook
+
+```sh
+adt list shared-flow -f PreProxyFlowHook -e dev
+```
+
+
+
 
 
 ## DELETE shared flow
