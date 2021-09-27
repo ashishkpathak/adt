@@ -3,7 +3,7 @@
   <br />
   <a href="https://github.com/ashishkpathak/adt">
     <img
-      src="https://lh6.googleusercontent.com/rjyBKWRjn6G82Q7cP-CwtU586JC1APwoDOpksYONYUvCk46yY2X2dTUa88Y1G4sgZ6OydAlPqQRykQuca6zH9rydj_K-XlfdT1UFswNZ2rig_frc3izOfi7VCvYbL-KO_Q=w1280"
+      src="adt.png"
       alt="ADT" width="400">
   </a>
 </p>
