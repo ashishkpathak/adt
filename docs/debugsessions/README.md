@@ -36,14 +36,15 @@ Lists debug sessions that were created either by using the Create debug session 
 ### USAGE
 ```sh
 A.D.T
-Operation on Environments.
-Usage: adt list debug-session [-hV] -a=<apiName> -e=<envName> [-n=<sessionName>] -r=<revision> [-t=<transactionId>] [-x=<proxyHost>]
+Operation on debug session.
+Usage: adt list debug-session [-hV] -a=<apiName> -e=<envName> [-n=<sessionName>] [-o=<output>] -r=<revision> [-t=<transactionId>] [-x=<proxyHost>]
 ADT is a fast, secure and reliable way to manage your proxies on Apigee.
   -a, --api-proxy=<apiName> The API Proxy for which debug session created.
   -e, --env=<envName>       The environment where debug session created.
   -h, --help                Show this help message and exit.
   -n, --session-name=<sessionName>
                             The session name.
+  -o, --output=<output>     Output the debug session to file.
   -r, --revision=<revision> The API proxy revision for which debug session created.
   -t, --transaction-id=<transactionId>
                             The session transaction id.
@@ -87,24 +88,21 @@ Deletes a debug session.
 
 ```sh
 A.D.T
-Remove various modules.
-Usage: adt delete [-hV] [COMMAND]
+Operation on debug session.
+Usage: adt delete debug-session [-hV] -a=<apiName> -e=<envName> -n=<sessionName> -r=<revision> [-x=<proxyHost>]
 ADT is a fast, secure and reliable way to manage your proxies on Apigee.
-  -h, --help      Show this help message and exit.
-  -V, --version   Print version information and exit.
-Commands:
-  apiproxy       Operation on API Proxy.
-  shared-flow    Operation on Shared Flows.
-  developer      Operation on App.
-  product        Operation on product.
-  app            Operation on App.
-  token          Operation on API Proxy.
-  target-server  Operation on target server
-  user           Operation on user.
-  kvm            Operation on KVM.
+  -a, --api-proxy=<apiName> The API Proxy for which debug session created.
+  -e, --env=<envName>       The environment where debug session created.
+  -h, --help                Show this help message and exit.
+  -n, --session-name=<sessionName>
+                            The session name to delete.
+  -r, --revision=<revision> The API proxy revision for which debug session created.
+  -V, --version             Print version information and exit.
+  -x, --proxy=<proxyHost>   Host:Port of the proxy server to use.
 Exit Code:
 Version 0.0.1
 Copyright (2021)
+
 ```
 
 ```sh
