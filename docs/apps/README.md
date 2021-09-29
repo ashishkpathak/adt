@@ -104,7 +104,7 @@ Note: You must include all current attribute and callback values in the payload;
 If you want to set the consumer key and consumer secret rather than having Edge generate them randomly, see Import existing consumer keys and secrets. (However, that API does not let you set an expiration time.)
 
 
-### UPDATE App Key
+## UPDATE App Key
 
 ## USAGE
 
@@ -144,7 +144,6 @@ To update api-products or attributes associated with the app key.
 ```sh
 adt update app key -i <developer-email> -n <app-name> -k <consumer-key> --product-config <product-confiig>
 ```
-
 
 
 ## LIST App

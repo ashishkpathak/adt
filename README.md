@@ -2,9 +2,7 @@
   <br />
   <br />
   <a href="https://github.com/ashishkpathak/adt">
-    <img
-      src="ADT.png"
-      alt="ADT" width="400">
+    <img src="ADT.png" alt="ADT" width="400">
   </a>
 </p>
 
@@ -39,7 +37,7 @@
 
 ## _Apigee Edge Deployment Tool_
 
-## Quick Start
+## 🚀 Quick Start
 ADT is command-line tool for deploying Apigee resources like API proxies, API products, Apps, Shared-flows, KVMs to your Apigee Edge public or private cloud.
 
 ADT can be used to create, deploy, list.
@@ -49,6 +47,7 @@ ADT can be used to create, deploy, list.
 - [Shared Flows](docs/shared-flows)
 - [KVM](docs/key-value-maps)
 - [Environments](docs/environments)
+- [Debug Session](docs/debugsessions)
 - [Developers](docs/developers)
 - [Developer Apps](docs/apps)
 - [Company Apps](docs/apps)
@@ -68,7 +67,7 @@ ADT can be used to create, deploy, list.
 - ✨Magic ✨
 
 [^] Contact author for these features.
-## Features
+## ✨ Features
 
 - Create an empty API Proxy template, have it created and deployed to Apigee Edge.
 - Validate your proxies/shared-flow policies for XML syntax and consistences.
@@ -91,7 +90,7 @@ adt init --login
 For production environments.
 
 
-## Help
+## ❓ Help
 
 ```sh
 A.D.T
@@ -114,7 +113,7 @@ Exit Codes:
 ```
 
 
-## Contributing
+## 🤝 Contributing
 
 Contact authors(me@pathak.id.au).
 

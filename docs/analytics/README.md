@@ -69,7 +69,7 @@ Example
 
 Creates an asynchronous analytics query.
 
-You must be an organization administrator to call this API. You can make up to seven calls per hour to this API. If you exceed the call quota, this API returns an HTTP 429 response.
+You must be an organization administrator to invoke this operation. You can make up to seven calls per hour. If you exceed the call quota, this API returns an HTTP 429 response.
 
 ### USAGE
 

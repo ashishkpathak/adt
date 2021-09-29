@@ -43,7 +43,7 @@ Import an alert configuration file on your local machine to your organization on
 
 
 ```sh
-adt create alert -n <api-product-name> --product-config <product-config-location>
+adt create alert -n <alert-name> --alert-config <alert-config-location>
 ```
 
 Example
