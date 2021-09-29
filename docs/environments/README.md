@@ -30,8 +30,8 @@ ADT is a fast, secure and reliable way to manage your proxies on Apigee.
   -V, --version             Print version information and exit.
   -x, --proxy=<proxyHost>   Host:Port of the proxy server to use.
 Exit Code:
-Version 0.0.1
-Copyright (2021)
+
+
 ```
 
 ### LIST ENVIRONMENT

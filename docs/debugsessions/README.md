@@ -19,8 +19,8 @@ ADT is a fast, secure and reliable way to manage your proxies on Apigee.
   -V, --version              Print version information and exit.
   -x, --proxy=<proxyHost>    Host:Port of the proxy server to use.
 Exit Code:
-Version 0.0.1
-Copyright (2021)
+
+
 ```
 Creeate a debug session on api-proxy () with revision (r) on environment (e) with name (n).
 
@@ -51,8 +51,8 @@ ADT is a fast, secure and reliable way to manage your proxies on Apigee.
   -V, --version             Print version information and exit.
   -x, --proxy=<proxyHost>   Host:Port of the proxy server to use.
 Exit Code:
-Version 0.0.1
-Copyright (2021)
+
+
 ```
 
 List debug session for api-proxy () with revision () on environment (env).
@@ -100,8 +100,8 @@ ADT is a fast, secure and reliable way to manage your proxies on Apigee.
   -V, --version             Print version information and exit.
   -x, --proxy=<proxyHost>   Host:Port of the proxy server to use.
 Exit Code:
-Version 0.0.1
-Copyright (2021)
+
+
 
 ```
 
