@@ -28,10 +28,10 @@
 
 <br />
 <p align="center">
-  <a href="#quick-start"><b>Quick Start</b></a> •
-  <a href="#features"><b>Features</b></a> •
-  <a href="#contributing"><b>Contributing</b></a> •
-  <a href="#license"><b>License</b></a>
+  <a href="#-quick-start"><b>Quick Start</b></a> •
+  <a href="#-features"><b>Features</b></a> •
+  <a href="#-contributing"><b>Contributing</b></a> •
+  <a href="#-license"><b>License</b></a>
 </p>
 <br />
 
