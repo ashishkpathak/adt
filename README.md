@@ -76,10 +76,6 @@ ADT can be used to create, deploy, list.
 - Query OAuth2.0 tokens
 - Export proxies, shared-flows, products.
 
-[Alexender Pope]
-
-> Nature and Nature's laws lay hid in night:
-> God said, Let Newton be! and all was light.
 
 
 ## Installation
