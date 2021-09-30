@@ -4,7 +4,7 @@
 
 Download the latest version of ADT for your platform. 
 
-Setup ADT for your environment, by providing the following values.
+Setup ADT for your environment, by providing the following:
 
 - Username 
 - Password
@@ -12,7 +12,7 @@ Setup ADT for your environment, by providing the following values.
 - The OAuth API endpoint for getting an access token.
 
 
-When running ADT as a batch mode, the above three can be provided as system variables.
+When running ADT as a batch mode, the above can be provided as system variables.
 
 
 ```sh
