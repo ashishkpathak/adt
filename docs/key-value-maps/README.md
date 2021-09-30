@@ -142,7 +142,7 @@ adt update kvm --env dev -n kvm-apigee-demo  -k user-id -v john.kid2
 
 ### Update KVM with key/value pairs in config file.
 
-ℹ️ Work In Progress
+<img src="../../caution-60x52.png"/>Work In Progress
 
 
 ## Delete KVM
@@ -194,4 +194,4 @@ adt delete kvm --org -n kvm-apigee-demo
 
 Delete KVM entry for Organization and API scoped KVM.
 
-ℹ️ Work In Progress
+<img src="../../caution-60x52.png"/>Work In Progress
