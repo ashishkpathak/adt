@@ -26,7 +26,7 @@ export ADT_PASSWORD=mypassword
 export ADT_ORGANIZATION=myorganization
 export ADT_URL=https://myorganization.login.apigee.com/oauth/token
 
-adt init --org:env ADT_ORGANIZATION --username:env ADT_USERNAME --password:env ADT_USERNAME --url:env ADT_URL
+adt init --org:env ADT_ORGANIZATION --username:env ADT_USERNAME --password:env ADT_PASSWORD --url:env ADT_URL
 ```
 
 
