@@ -41,7 +41,7 @@ Sample response
 
 Create a KVM scoped to an organization/API revision.
 
-ℹ️ Work In Progress
+<img src="../../caution-60x52.png"/>Work In Progress
 
 ## LIST KVM
 

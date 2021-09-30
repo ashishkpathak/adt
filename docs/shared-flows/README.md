@@ -77,7 +77,7 @@ adt create apiproxy -n sf-quota -p ../sf-quota.zip -d -e test
 Updates an existing revison of an shared flow by uploading an shared flow configuration bundle as a zip file or sharedflowbundle directory from your local machine.
 If the shared flow revision is deployed, the API undeploys the revision, updates it, and then redeploys it. If the shared flow revision is not deployed, the API updates the revision but does not deploy it.
 
-CAUTION: The shared flow is immediately updated in all environments where it is deployed.
+<img src="../../caution-60x52.png"/> The shared flow is immediately updated in all environments where it is deployed.
 ### USAGE
 
 ```sh

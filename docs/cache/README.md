@@ -10,10 +10,6 @@ adt create cache --help
 
 Operation on cache.
 
-```sh
-<ToDo>
-
-```
 
 #### Import a cache config.
 
