@@ -17,6 +17,7 @@ When running ADT as a batch mode, the above three can be provided as system vari
 
 ```sh
 adt init --org:env --username:env --password:env --url:env
+```
 
 
 ```sh
