@@ -41,7 +41,7 @@ Sample response
 
 Create a KVM scoped to an organization/API revision.
 
-<ToDo>
+ℹ️ Work In Progress
 
 ## LIST KVM
 
@@ -142,7 +142,7 @@ adt update kvm --env dev -n kvm-apigee-demo  -k user-id -v john.kid2
 
 ### Update KVM with key/value pairs in config file.
 
-<ToDo>
+ℹ️ Work In Progress
 
 
 ## Delete KVM
@@ -194,4 +194,4 @@ adt delete kvm --org -n kvm-apigee-demo
 
 Delete KVM entry for Organization and API scoped KVM.
 
-<ToDo>
+ℹ️ Work In Progress
