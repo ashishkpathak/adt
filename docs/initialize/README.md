@@ -8,10 +8,10 @@ Download the latest version of ADT for your platform.
 
 Setup ADT for your environment, by providing the following:
 
-a. Username 
-b. Password
-c. Organization Name.
-d. OAuth API endpoint for getting an access token.
+- Username 
+- Password
+- Organization Name.
+- OAuth API endpoint for getting an access token.
 
 ADT would use these to request an access token to invoke the management API. This is one time operation. There are two ways of initializing the tool. 
 
@@ -47,21 +47,21 @@ Version 0.0.1
 
 The tool would prompt for the password when invoked with -p option. 
 ### USAGE
+
 ```sh
 adt init -u myusername@domain.com -o myorganization -c https://myorg.login.apigee.com/oauth/token -p
 Enter value for --password (The password.):
 ```
 
+This would interactively accept the password. If url is not provided it defaults to https://login.apigee.com/oauth/token
+
+This would generate a config  in ~/.aditi/aditi.conf with these values. It would then request for an access and refresh token from ADT_URL provided. The tokens would be stored in ~/.aditi/config.json
 
 
 ### Batch Mode 
 
 When running ADT as a batch mode, these config parameters can be provided as system variables.
 
-
-```sh
-adt init --org:env --username:env --password:env --url:env
-```
 
 ```sh
 export ADT_USERNAME=myusername@domain.com.au
@@ -73,13 +73,8 @@ adt init --org:env ADT_ORGANIZATION --username:env ADT_USERNAME --password:env A
 ```
 
 
-This would generate a config  in ~/.aditi/application.conf with these values. It would then request for an access and refresh token from ADT_URL provided. The tokens would be stored in ~/.aditi/config.json
+This would generate a config  in ~/.aditi/aditi.conf with these values. It would then request for an access and refresh token from ADT_URL provided. The tokens would be stored in ~/.aditi/config.json
 
-```
-adt init --org <org> --username <username> --url <url> --password
-```
-
-This would interactively accept the password. If url is not provided it defaults to https://login.apigee.com/oauth/token
 
 
 
