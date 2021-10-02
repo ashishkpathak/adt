@@ -31,7 +31,7 @@
   <a href="#-quick-start"><b>Quick Start</b></a> •
   <a href="#-features"><b>Features</b></a> •
   <a href="#-contributing"><b>Contributing</b></a> •
-  <a href="#-license"><b>License</b></a>
+  <a href="#-license"><b>License</b></a> •
 </p>
 <br />
 
@@ -75,19 +75,13 @@ ADT can be used to create, deploy, list.
 - Query OAuth2.0 tokens
 - Export proxies, shared-flows, products.
 
-
-
 ## Installation
 
 ADT
 
-Install the command line tool and init your environment.
+Install the command line tool and initialize it for your environment. 
 
-```sh
-adt init --login
-```
-
-For production environments.
+[Installation/Setup](docs/initialize/README.md)
 
 
 ## ❓ Help
@@ -115,7 +109,7 @@ Exit Codes:
 
 ## 🤝 Contributing
 
-Contact authors(me@pathak.id.au).
+Contact authors(adt@pathak.id.au).
 
 
 ## License
