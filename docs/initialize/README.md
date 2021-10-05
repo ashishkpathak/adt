@@ -55,7 +55,7 @@ Enter value for --password (The password.):
 
 This would interactively accept the password. If url is not provided it defaults to https://login.apigee.com/oauth/token
 
-This would generate a config  in ~/.aditi/aditi.conf with these values. It would then request for an access and refresh token from ADT_URL provided. The tokens would be stored in ~/.aditi/config.json
+This generates a config  in ~/.aditi/aditi.conf with these values. It would then request for an access and refresh token from ADT_URL provided. The tokens would be stored in ~/.aditi/config.json
 
 
 ### Batch Mode 
@@ -73,7 +73,7 @@ adt init --org:env ADT_ORGANIZATION --username:env ADT_USERNAME --password:env A
 ```
 
 
-This would generate a config  in ~/.aditi/aditi.conf with these values. It would then request for an access and refresh token from ADT_URL provided. The tokens would be stored in ~/.aditi/config.json
+This generates a config  in ~/.aditi/aditi.conf with these values. It would then request for an access and refresh token from ADT_URL provided. The tokens would be stored in ~/.aditi/config.json
 
 
 

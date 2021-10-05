@@ -50,6 +50,7 @@ ADT can be used to create, deploy, list.
 - [Debug Session](docs/debugsessions)
 - [Developers](docs/developers)
 - [Developer Apps](docs/apps)
+- [Deployments](docs/deployments)
 - [Company Apps](docs/apps)
 - [Users^](docs/users)
 - [Roles^](docs/roles)
