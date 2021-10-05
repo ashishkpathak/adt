@@ -51,7 +51,7 @@ Version 0.0.1
 Deploy API proxy 
 
 ```sh
-adt deploy apiproxy -n api-httpbin-proxy-v1 -r 1 -e dev -x localhost:3129
+adt deploy apiproxy -n api-httpbin-proxy-v1 -r 1 -e dev -x proxyhost:3129
 ```
 
 ### Usage Undeploy API Proxy
