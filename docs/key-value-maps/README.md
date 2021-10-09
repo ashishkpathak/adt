@@ -1,6 +1,17 @@
 # Key Value maps
 
 ## CREATE KVM
+Creates a key value map (KVM) in an organization/API/environment.
+
+A KVM is a simple structure for persistently storing name/value pairs as entries in a named map. The entries in a KVM can be retrieved at runtime by the KeyValueMapOperations policy or code running on Apigee Edge. Use KVMs for use cases such as profile-based access control, storing environment-specific data, to control application-specific behavior, and so on.
+
+You can create an encrypted KVM by adding "encrypted" : "true" to the request payload. You update encrypted KVMs the same way you update non-encrypted KVMs.
+
+KVM names are case sensitive.
+
+Note: KVMs created at the organization scope do not appear in the Edge UI. Only KVMs created at the environment scope apear in the Edge UI. To see the KVMs defined at the organization scope, use the List KVMs for an organization API.
+
+For information on retrieving KVMs, see KeyValueMapOperations policy.
 
 ### Usage
 

@@ -2,6 +2,21 @@
 
 ## CREATE DEBUG SESSIONS
 
+Creates a debug session.
+
+A debug session records detailed information on messages, flow processing, and policy execution during processing by an API proxy.
+
+The data returned in the debug session is a single XML or JSON representation of all debug data for each message exchange. The debug data is the same as that used to generate the Trace view in the Edge UI.
+
+A debug session captures a maximum of 20 messages or records for a maximum of 10 minutes (by default), whichever comes first.
+
+Debugging involves the following steps:
+
+- Start a debug session by creating a debug session.
+- Send a message for that deployed API proxy.
+- Retrieve the debug data associated with the debug session. The data can be fetched by issuing a GET call on the session.
+- Close the debug session. (Closing the debug session discards all the associated data).
+
 ### Usage
 
 ```sh
@@ -22,7 +37,7 @@ Exit Code:
 
 
 ```
-Creeate a debug session on api-proxy () with revision (r) on environment (e) with name (n).
+Create a debug session on api-proxy () with revision (r) on environment (e) with name (n).
 
 ```sh
 adt create debug-session -a api-httpbin-proxy-v1 -r 4 -e dev -n my-debug-sessions 

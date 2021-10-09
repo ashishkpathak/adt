@@ -162,6 +162,9 @@ Usage: adt list apiproxy [-hV] [--list-revision] [-n=<name>] [-o=<output>]
 
 #### List all api proxies in organization
 
+Lists the names of all API proxies in an organization. The names returned correspond to the names defined in the configuration files for each API proxy.
+
+
 ```sh
 adt list apiproxy 
 ```

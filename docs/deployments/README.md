@@ -83,6 +83,7 @@ adt undeploy apiproxy -n api-httpbin-proxy-v1 -r 2 -e dev
 
 ## LIST DEPLOYMENTS
 
+Lists all API proxies that are deployed for environments/revisions in an organization.
 
 ### Usage
 ```sh
@@ -106,8 +107,19 @@ Exit Code:
 Version 0.0.1
 ```
 
+Lists all API proxies that are deployed for all environments in an organization.
 
-List deployments of an API proxy/Shared Flows. 
+```sh
+adt list deployment
+
+```
+Lists all API proxies that are deployed to the specified environment. The server information is used by Apigee support to identify servers that support the API proxy deployment.
+
+```sh
+adt list deployment -e test
+```
+
+List deployments of an API proxy/Shared Flows.  Gets details for all deployments of the API proxy across all environments (test, prod, and so on)
 
 ```sh
 adt list deployment -n api-httpbin-proxy-v1
@@ -118,7 +130,7 @@ List deployment of an API Proxy and include server status information. To includ
 ```sh
 adt list deployment -n api-httpbin-proxy-v1 --server-status
 ```
-List deployment of shared flow.  Use option --type to distinguish between apiproxy and shared-flows.
+List deployment of shared flow.  Use option --type/-t to distinguish between apiproxy and shared-flows.
 
 ```sh
 adt list deployment -n TokenSecurity -t shared-flow

@@ -2,6 +2,20 @@
 
 ## CREATE ENVIIRONMENT
 
+Creates an environment in an existing organization.
+
+Notes:
+
+    Apigee Edge for Private Cloud only. If you are using Apigee Edge for Public Cloud, contact Apigee Support for assistance.
+    This API cannot be executed using the Try this API panel.
+
+After you create the environment, you must:
+
+    Associate the environment with one or more Message processors. See Associate an environment with a Message Processor.
+    Enable analytics on the environment. See Enable analytics for an environment.
+
+Edge provides scripts and other tools that you can use as an alternative to making API calls directly. For example, see Creating an organization, environment, and virtual host.
+
 ### Usage
 
 ```sh

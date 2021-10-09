@@ -18,14 +18,26 @@ Use Get Alerts to get the UUIDs of all alerts for an organization.
 adt list alert
 ```
 
+Gets an alert definition.
+
+Note: Edge imposes a quota on this API of 60 calls per minute per organization. This quota is calculated by multiplying 20 (number of allowed alerts) * 3 = 60 calls.
+Use List Alert to get the UUIDs of all alerts for an organization.
+
+More information and examples of this API see <a href ="https://docs.apigee.com/api-monitoring/alerts-notifications-api"> Managing Alerts and Notifications</a>
+
 Get Alert with ID
 
 ```sh
 adt list alert --alert-id <alert-id>
 ```
 
-
 ## CREATE ALERT
+
+You can set up a maximum of 20 alerts per organization. The alert settings apply to all users in the organization; they are not per user. If you change the alert settings, they change for all users in your organization.
+
+Note: Edge imposes a quota on this API of 60 calls per minute per organization. This quota is calculated by multiplying 20 (number of allowed alerts) * 3 = 60 calls.
+
+More information and examples of this API see <a href ="https://docs.apigee.com/api-monitoring/alerts-notifications-api"> Managing Alerts and Notifications</a>
 
 ### USAGE
 
@@ -102,6 +114,11 @@ The structure of alert-httpbin-v1 as an example is
 Updates an alert.
 
 Use Get Alerts to get the UUIDs of all alerts for an organization. 
+
+Note:
+
+- You cannot change the organization when updating the alert.
+- Edge imposes a quota on this API of 60 calls per minute per organization. This quota is calculated by multiplying 20 (number of allowed alerts) * 3 = 60 calls.
 
 
 ### USAGE

@@ -12,6 +12,7 @@ Enables analytics for an environment
 ```sh
 adt create analytics --enable
 ```
+
 After you create an environment, you can enable analytics for the environment. If you wish to enable analytics for one environment, you must enable analytics for all environments in the organization.
 
 You must pass the entries for Analtyics onboarding in a file named sample.json. For example:    
