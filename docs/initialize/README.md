@@ -4,7 +4,7 @@
 
 ## Setup
 
-<a href="../download">Download</a> the latest version of ADT for your platform. 
+<a href="../../download">Download</a> the latest version of ADT for your platform. 
 
 Setup ADT for your environment, by providing the following:
 
