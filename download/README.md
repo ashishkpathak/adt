@@ -6,4 +6,4 @@
 
 ### Mac OS
 
-Native Image of ADT for Mac adt_0.0.1.zip
+Native Image of ADT for Mac adt_osx-x86_64-0.0.1
