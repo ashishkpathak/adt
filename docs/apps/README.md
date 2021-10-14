@@ -103,6 +103,72 @@ Note: You must include all current attribute and callback values in the payload;
 
 If you want to set the consumer key and consumer secret rather than having Edge generate them randomly, see Import existing consumer keys and secrets. (However, that API does not let you set an expiration time.)
 
+### Usage
+
+```sh
+A.D.T
+Operation on App.
+Usage: adt update app [-hV] [--company] [-a=<attributeName>] [-i=<id>] [-l=<appConfigLocation>] [-n=<name>] [-t=<status>] [-v=<attributeValue>] [-x=<proxyHost>] [COMMAND]
+ADT is a fast, secure and reliable way to manage your proxies on Apigee.
+  -a, --attribute-name=<attributeName>
+                            The app attribute name.
+      --company             Is company app.
+  -h, --help                Show this help message and exit.
+  -i, --id=<id>             The email address if developer app or company name if company app.
+  -l, --app-config=<appConfigLocation>
+                            The App config location. Can be app update or attribute update config. You must include all current attribute, API product, and callback values
+                              in the payload along with any changes you want to make; otherwise, the existing values are removed. To display the current values, use list app.
+  -n, --name=<name>         The app name.
+  -t, --status=<status>     The status of app. Approved or Revoked
+  -v, --attribute-value=<attributeValue>
+                            The app attribute value.
+  -V, --version             Print version information and exit.
+  -x, --proxy=<proxyHost>   Host:Port of the proxy server to use.
+Commands:
+  key  Operation on App Keys.
+Version 0.0.1
+
+```
+
+#### Update App
+Add new credentials with new API products and attributes.
+
+```sh
+adt update app -i apideveloper@yopmail.com -n app-httpbin -l ../../aditi/app-httpbin/app-httpbin-update.json
+```
+
+This would update all the attributes, callback url.
+Sample api-httpbin-update.json 
+
+```json
+{
+    "apiProducts": [
+        "aprod-httpbin-v1","aprod-httpbin-v2"
+    ],
+    "attributes": [
+        {
+            "name": "DisplayName",
+            "value": "ADT-Demo-App"
+        },
+        {
+            "name": "Notes",
+            "value": "Demo httpbin app."
+        },
+        {
+            "name": "PlayGround",
+            "value": "Hockey-123"
+        },
+        {
+            "name": "YeAttrib",
+            "value": "attrib -xa -cb"
+        }
+    ],
+    "callbackUrl": "http://callback-2.test.optusnet.com.au",
+    "name": "app-httpbin",
+    "scopes": [],
+    "status": "approved"
+}
+```
 
 ## UPDATE App Key
 
