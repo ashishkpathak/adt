@@ -194,13 +194,13 @@ adt list product
 List a product with a name.
 
 ```sh
-adt product list -n <product-name>
+adt list product -n <product-name>
 ```
 
 Optionally list products with an attribute or attribute value or both
 
 ```sh
-adt product list -a <attribute-name> -v <attribute-value> -c <number of products to return>
+adt list product -a <attribute-name> -v <attribute-value> -c <number of products to return>
 ```
 
 
