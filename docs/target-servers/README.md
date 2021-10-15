@@ -1,4 +1,4 @@
-# TARGET SERVERR
+# TARGET SERVER
 ## CREATE TARGET SERVER
 
 Creates a TargetServer in the specified environment.
