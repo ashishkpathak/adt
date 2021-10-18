@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FlowCallout async="false" continueOnError="false" enabled="true" name="FC_FaultHandler">
+    <DisplayName>FC_FaultHandler</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <SharedFlowBundle>sf-default-faulthandling</SharedFlowBundle>
+</FlowCallout>
