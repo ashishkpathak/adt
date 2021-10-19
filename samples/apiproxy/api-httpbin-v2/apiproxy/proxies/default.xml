@@ -4,7 +4,7 @@
     <DefaultFaultRule name="DefaultFaultRule">
         <Step>
             <FaultRules/>
-            <Name>FC_FaultHandler</Name>
+            <!-- <Name>FC_FaultHandler</Name> -->
         </Step>
         <AlwaysEnforce>false</AlwaysEnforce>
     </DefaultFaultRule>
@@ -27,7 +27,7 @@
     <HTTPProxyConnection>
         <BasePath>/api/httpbin/v2</BasePath>
         <Properties/>
-        <VirtualHost>vhost-apigee-optus-https</VirtualHost>
+        <VirtualHost>default</VirtualHost>
     </HTTPProxyConnection>
     <RouteRule name="default">
         <TargetEndpoint>default</TargetEndpoint>

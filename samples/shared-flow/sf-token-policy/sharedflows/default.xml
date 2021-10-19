@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Condition>request.verb != "OPTIONS"</Condition>
+        <FaultRules/>
+        <Name>ValidateOAuthToken</Name>
+    </Step>
+    <Step>
+        <Condition>oauthV2.ValidateOAuthToken.failed = true</Condition>
+        <FaultRules/>
+        <Name>RaiseFaultInvalidAuthorization</Name>
+    </Step>
+</SharedFlow>

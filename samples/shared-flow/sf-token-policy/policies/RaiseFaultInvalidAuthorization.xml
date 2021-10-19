@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RaiseFaultInvalidAuthorization">
+    <DisplayName>RaiseFaultInvalidAuthorization</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="application/json">  {
+                "code": "GW:001",
+                "message": "Invalid Authorization",
+                "httpStatus": 401,
+                "error": {
+                "domain": "ApigeeEdge",
+                "reason": "{oauthV2.ValidateOAuthToken.fault.name}",
+                "message": "Invalid OAuth2 Token"
+                }
+                }
+            </Payload>
+            <StatusCode>401</StatusCode>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <ShortFaultReason>false</ShortFaultReason>
+</RaiseFault>

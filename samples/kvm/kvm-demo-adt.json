@@ -1,0 +1,10 @@
+{
+  "encrypted": false,
+  "entry": [
+    {
+      "name": "mock-uri",
+      "value": "https://mockapi.com/pet/421"
+    }
+  ],
+  "name": "kvm-demo-adt"
+}

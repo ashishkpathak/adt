@@ -1,0 +1,21 @@
+{
+    "email": "apideveloper@yopmail.com",
+    "firstName": "API",
+    "lastName": "Developer",
+    "userName": "apideveloper@yopmail.com",
+    "attributes": [
+      {
+        "name": "developer-group-updated",
+        "value": "DT-1"
+      }, {
+        "name": "app-id",
+        "value": "232"
+      }, {
+        "name": "developer-id",
+        "value": "DrWho"
+      }, {
+        "name": "BitCoinAccId",
+        "value": "97-JMN-F82-FNW-02"
+      }
+    ]
+  }

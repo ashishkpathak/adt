@@ -3,5 +3,5 @@
     <DisplayName>FC_AccessPolicy</DisplayName>
     <FaultRules/>
     <Properties/>
-    <SharedFlowBundle>sf-quota-enforcement-policy-accessTokenValidation</SharedFlowBundle>
+    <SharedFlowBundle>sf-token-policy</SharedFlowBundle>
 </FlowCallout>

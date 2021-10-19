@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="RaiseFaultInvalidAuthorization" version="SHA-512:20d47a04be679bb57a6dfdf2b3c814fe83cb4e0188d9e0267a13a6de494af3ce4ff002d10eb9abcaa91d95aaaa3e6fffb3ede543b6eee0c4335f5148b0f2b96f"/>
+        <VersionInfo resourceName="ValidateOAuthToken" version="SHA-512:d0347725a007236eba98a77ee6bcb6c8f9a89a76901255ea31bd9e95197d85dffd7a31500d065fb361697a0d4bf5be23e21b6832c92f10616e4bf18aef87c5bc"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources/>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:fbd59883fee748a6673ac83f3f29b1f6cee86eab7bade9a757fb30e33f107c9a25aea43f5c4738219bea571a78f9842c913dfb6d74e194be872869931503b856"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

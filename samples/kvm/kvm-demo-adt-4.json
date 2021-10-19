@@ -1,0 +1,16 @@
+{
+  "encrypted": false,
+  "entry": [
+    {
+      "name": "name",
+      "value": "postgres"
+    },{
+      "name": "driver",
+      "value": "org.postgres"
+    },{
+      "name": "version",
+      "value": "9.0"
+    }
+  ],
+  "name": "kvm-demo-adt-4"
+}

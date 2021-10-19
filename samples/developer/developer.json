@@ -1,0 +1,12 @@
+{
+    "email": "apideveloper@yopmail.com",
+    "firstName": "API",
+    "lastName": "Developer",
+    "userName": "apideveloper@yopmail.com",
+    "attributes": [
+      {
+        "name": "developer-group",
+        "value": "DT"
+      }
+    ]
+  }

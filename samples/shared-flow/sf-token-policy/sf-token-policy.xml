@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="23" name="sf-token-policy">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1614044637106</CreatedAt>
+    <CreatedBy>user@domain.com</CreatedBy>
+    <Description>Validate OAuth Token</Description>
+    <DisplayName>sf-token-policy</DisplayName>
+    <LastModifiedAt>1614044637106</LastModifiedAt>
+    <LastModifiedBy>user@domain.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:14821e55f42ea99ee262db947681ef82f5371362d8aa7912e2709449dad6ba5763b4bc6025e15bebb0cd3179681638df49789b4f5be22f2a6ea3929582501843:ap-southeast-2</ManifestVersion>
+    <Policies>
+        <Policy>RaiseFaultInvalidAuthorization</Policy>
+        <Policy>ValidateOAuthToken</Policy>
+    </Policies>
+    <Resources/>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

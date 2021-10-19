@@ -1,0 +1,10 @@
+{
+  "encrypted": false,
+  "entry": [
+    {
+      "name": "quota",
+      "value": "100tps"
+    }
+  ],
+  "name": "kvm-demo-adt-3"
+}
