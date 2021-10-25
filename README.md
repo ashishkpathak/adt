@@ -38,7 +38,7 @@
 ## _Apigee Edge Deployment Tool_
 
 ## 🚀 Quick Start
-ADT is command-line tool for deploying Apigee resources like API proxies, API products, Apps, Shared-flows, KVMs to your Apigee Edge public or private cloud.
+ADT is command-line tool for deploying Apigee entities like API proxies, API products, Apps, Shared-flows, KVMs to your Apigee Edge public or private cloud.
 
 ADT can be used to create, deploy, list.
 

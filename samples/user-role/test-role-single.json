@@ -1,0 +1,8 @@
+{
+  "path": "/apps",
+  "permissions": [
+    "put",
+    "get",
+    "delete"
+  ]
+}

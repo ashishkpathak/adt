@@ -3,11 +3,11 @@
     <Basepaths>/api/httpbin/v1</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1629781475471</CreatedAt>
-    <CreatedBy>ashishkpathak@gmail.com</CreatedBy>
+    <CreatedBy>user@domain.com</CreatedBy>
     <Description>Demo httpbin proxy.</Description>
     <DisplayName>api-httpbin-proxy-v1</DisplayName>
     <LastModifiedAt>1630479724478</LastModifiedAt>
-    <LastModifiedBy>ashishkpathak@gmail.com</LastModifiedBy>
+    <LastModifiedBy>user@domain.com</LastModifiedBy>
     <ManifestVersion>SHA-512:059d9b23fe19b70016e1b1d699838ec9569ea4e6bd74a48210424b811c2c4a1c50c65bfad93e166dc9075722076d9543bdf63ba3d9bee5227c96920b9c341029:ap-southeast-2</ManifestVersion>
     <Policies/>
     <ProxyEndpoints>
