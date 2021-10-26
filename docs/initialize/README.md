@@ -67,12 +67,12 @@ This generates a config  in ~/.aditi/aditi.conf with these values. It would then
 ## Interactive Mode via SAML authentication
 
 ```sh
-./adt init --org <organization> --url <url> --passcode
+adt init --org <organization> --url <url> --passcode
 Enter value for --passcode (The passcode, when login through SAML.)
 ```
 A passcode is required when authenticating with a SAML IDP, and may be used to authenticate with an LDAP IDP.  Please check <a href="SAML.md">SAML Authentication</a> for more information on how Apigee Edge authenticates users via Identity Provider.
 
-To request a passcode visit https://zonename.apigee.com/passcode , where <zonename> is specific to your organization.
+To request a passcode visit https://zonename.apigee.com/passcode , where "&lt;zonename&gt;" is specific to your organization. 
 
 ### Batch Mode 
 

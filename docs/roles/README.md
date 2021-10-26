@@ -26,13 +26,13 @@ Version 1.0.0
 ```
 
 
-### CREATE user role
+### CREATE user role  
 Creates one or more user roles in an organization.
 
 After you create the role, you can use the following operations to add permissions to the role:
 
-Add permissions for multiple resources to a role.
-Add permissions for a single resource to a role.
+- Add permissions for multiple resources to a role.
+- Add permissions for a single resource to a role.
 
 Role names cannot contain special characters.
 

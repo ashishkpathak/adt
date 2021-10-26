@@ -1,0 +1,19 @@
+{
+    "compression" : {
+      "minimumSizeInKB" : 10
+    },
+    "description" : "Cache used for storing Keys for different Proxies/Apps",
+    "diskSizeInMB" : 0,
+    "distributed" : true,
+    "expirySettings" : {
+      "expiryDate" : {
+        "value" : ""
+      }
+    },
+    "inMemorySizeInKB" : 0,
+    "maxElementsInMemory" : 50,
+    "maxElementsOnDisk" : 0,
+    "name" : "cache-proxy-keys",
+    "overflowToDisk" : false,
+    "persistent" : false
+  }
