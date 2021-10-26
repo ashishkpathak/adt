@@ -7,10 +7,38 @@ Users are associated with one or more user roles. Each user role defines a set o
 A user role is scoped to an organization.
 
 
-## CREATE OPERATIONS
+## Create Operations
 
 ### USAGE
 
+```sh
+A.D.T
+Operation on user roles.
+Usage: adt create user-role [-hV] -;=<input> [-x=<hostPort>]
+ADT is a fast, secure and reliable way to manage your entities on Apigee.
+  -i, --user-role-config=<input>
+                  Location of user role config.
+  -h, --help      Show this help message and exit.
+  -V, --version   Print version information and exit.
+  -x, --http-proxy=<hostPort>
+                  Use http proxy (host:port)
+Version 1.0.0
+```
+
+
+### CREATE user role
+Creates one or more user roles in an organization.
+
+After you create the role, you can use the following operations to add permissions to the role:
+
+Add permissions for multiple resources to a role.
+Add permissions for a single resource to a role.
+
+Role names cannot contain special characters.
+
+```sh
+adt create user-role -i ../samples/user-role/create-test-role.json
+```
 
 
 ## LIST OPERATIONS
@@ -30,7 +58,6 @@ ADT is a fast, secure and reliable way to manage your entities on Apigee.
   -x, --http-proxy=<proxyHost>
                       Host:Port of the proxy server to use.
 Version 1.0.0
-
 
 ```
 #### List all user-roles in an organization.
@@ -120,6 +147,10 @@ Sample response:
 
 ## QUERY
 
+### USAGE
+
+
+
 
 ### Query userrole have permissions for a path.
 
@@ -174,7 +205,7 @@ ADT is a fast, secure and reliable way to manage your entities on Apigee.
 Version 1.0.0
 ```
 
-### Update user-role
+### Update user-role.
 
 User role permission can be updated using *adt update user-role permission* command. The input is JSON file. The file can contain an entry for single path, or multiple path, but not both.
 
@@ -225,6 +256,42 @@ Updating **multiple**, the permission.json sample
   ]
 }
 ```
+###  Add/Remove user from a role.
+
+
+#### Usage 
+
+```sh
+A.D.T
+Operation on User, to add/remove User Roles.
+Usage: adt update user-role user [-hV] [--remove] -n=<roleName> -u=<userEmail> [-x=<proxyHost>]
+ADT is a fast, secure and reliable way to manage your entities on Apigee.
+  -h, --help      Show this help message and exit.
+  -n, --role-name=<roleName>
+                  Role name.
+      --remove    Remove a user role from user.
+  -u, --user-email=<userEmail>
+                  The user email.
+  -V, --version   Print version information and exit.
+  -x, --http-proxy=<proxyHost>
+                  Host:Port of the proxy server to use.
+Version 1.0.0
+
+```
+By default it adds the user to the role.
+
+**Remove a user role from user.**
+
+```sh
+    adt update user-role user -n <user-email> --role <role> --remove
+```
+
+**Add a user role to user.**
+
+```sh
+    adt update user-role user -n <user-email> --role <role>
+```
+
 
 ## DELETE 
 ### USAGE 
@@ -245,6 +312,17 @@ Version 1.0.0
 ```
 ### Delete user-role
 
+Deletes a role from an organization.
+
+Roles can only be deleted when no users are assigned to the role. See Remove a user from a role.
+
+```sh
+adt delete user-role -n <user-role>
+```
+
+
+### Remove permission from user-role
+
 Deletes a permission for a resource in the role specified. Permissions are case sensitive. Specify the permission as get, put, or delete.
 The following removes the permission 'get' from path '/environments/sit4' for role 'test-role'.
 
@@ -252,24 +330,4 @@ The following removes the permission 'get' from path '/environments/sit4' for ro
 adt delete user-role permission -n test-role -p get --path "/environments/sit4/"
 ```
 
-
-## USER OPERATIONS
-
-
-//list global users.
-adt list users --global
-
-
-//list global users.
-adt list users --global -n <useremail>
-
-//update global users.
-adt update users --global -n <useremail>
-
-
-//delete global users.
-adt delete users --global -n <useremail>
-
-//delete global users.
-adt update users --global -n <useremail> --unlock
 
