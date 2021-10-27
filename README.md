@@ -52,8 +52,8 @@ ADT can be used to create, deploy, list.
 - [Developer Apps](docs/apps)
 - [Deployments](docs/deployments)
 - [Company Apps](docs/apps)
-- [Users^](docs/users)
-- [Roles^](docs/roles)
+- [Users](docs/users)
+- [Roles](docs/roles)
 - [Alerts^](docs/alerts)
 - [Analytics^](docs/analytics)
 - [Reports^](docs/reports)
@@ -92,20 +92,19 @@ Install the command line tool and initialize it for your environment.
 A.D.T
 Apigee Deployment Tool
 Usage: adt [-hV] [COMMAND]
-ADT is a fast, secure and reliable way to manage your proxies on Apigee.
+ADT is a fast, secure and reliable way to manage your entities on Apigee.
   -h, --help      Show this help message and exit.
   -V, --version   Print version information and exit.
 Commands:
-  help    Displays help information about the specified command
-  create  Create operations on various apigiee modules (apps, developer,
-            proxies, products etc)
-  deploy  Deploy apiproxies and shared-flows.
-  delete  Remove various modules.
-  list    List operations on proxies/kvm/products etc.
-  query   Query OAuth 2.0 tokens.
-  update  Update apps, developer, proxies, products etc
-Exit Codes:
-[Copyright 2021]Version 1.0.0
+  create    Create operations on various apigiee entities (apps, developer, proxies, products etc)
+  deploy    Deploy apiproxy and shared-flows.
+  init      Initialise adt environment
+  undeploy  Undeploy apiproxies and shared-flows.
+  delete    Remove various entities.
+  list      List operations on proxies/kvm/products etc.
+  query     Query OAuth 2.0/ 1.0a tokens.
+  update    Update apps, developer, proxies, products etc
+Version 1.0.0
 ```
 
 

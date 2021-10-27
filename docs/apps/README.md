@@ -292,3 +292,54 @@ ADT is a fast, secure and reliable way to manage your proxies on Apigee.
 adt list app key -i <developer-email> -n <app-name> -k <customer-key>
 ```
 
+
+## Query App
+
+### Usage
+
+```sh
+A.D.T
+Operation on App.
+Usage: adt query app [-hV] [--company] [-a=<attributeName>] [-c=<limit>] [-k=<customerKey>] [-n=<name>] [-v=<attributeValue>] [-x=<proxyHost>]
+ADT is a fast, secure and reliable way to manage your entities on Apigee.
+  -a, --attribute-name=<attributeName>
+                            Search app with attribute name
+  -c, --limit=<limit>       Number of results to return. Default 10.
+      --company             Is company app.
+  -h, --help                Show this help message and exit.
+  -k, --key=<customerKey>   Search app with customer key
+  -n, --name=<name>         The name of API proxy.
+  -v, --attribute-value=<attributeValue>
+                            Search app with attribute value
+  -V, --version             Print version information and exit.
+  -x, --http-proxy=<proxyHost>
+                            Host:Port of the proxy server to use.
+Version 1.0.0
+
+```
+
+
+Query for app which contain text in their name.  
+```sh
+adt query app -n <text>
+```
+
+Query for app which has an attribute name
+
+```sh
+adt query app -a <attribute-name> 
+```
+
+Query for app which has an attribute value. 
+
+Note: The attribute value can be for any attribute name, not necessarly the queried attribute name.
+
+```sh
+adt query app -a <attribute-name> -v <attribute-value>
+```
+
+Query for an App with consumer key 
+
+```sh
+adt query app -k <consumerkey>
+```
