@@ -21,5 +21,5 @@ Where orgName is the name of an Edge organization. This endpoint could be differ
 
 
 
-The <zonename> is to be replaced with domain specific to your organization 
+The {zonename} is to be replaced with domain specific to your organization 
 
