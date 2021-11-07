@@ -20,6 +20,29 @@ Version 1.0.1
 Exit: 0
 ```
 
+#### Create a developer using config json.
+```sh
+
+adt create developer -i ../sample/developer/developer.json
+```
+
+Sample config for developer
+
+```json
+{
+    "email": "apideveloper@yopmail.com",
+    "firstName": "API",
+    "lastName": "Developer",
+    "userName": "apideveloper@yopmail.com",
+    "attributes": [
+      {
+        "name": "developer-group",
+        "value": "DT"
+      }
+    ]
+  }
+```
+
 ## List Developer
 
 
@@ -112,6 +135,48 @@ Sample response.
   "name" : "developer-group",
   "value" : "DT"
 }
+```
+
+
+## Update Developer
+
+### Usage
+```sh
+A.D.T
+Operation on Developer.
+Usage: adt update developer [-hV] [--disable] [--enable] [-a=<attributeName>] [-i=<input>] -n=<email> [-v=<attributeValue>] [-x=<proxyHost>]
+ADT is a fast, secure and reliable way to manage your entities on Apigee.
+  -a, --attribute-name=<attributeName>
+                        The product attribute name whose value to update.
+      --disable         Inactivate the user.  If you set a developer's status to inactive, the API keys assigned to the developer's apps are no longer valid even though keys
+                          continue to show a status of "Approved".
+      --enable          Set the status of user as 'Active'.
+  -h, --help            Show this help message and exit.
+  -i, --input=<input>   Location of config file. The config file can be attribute JSON or complete developer JSON.
+  -n, --name=<email>    The name of API proxy.
+  -v, --attribute-value=<attributeValue>
+                        The product attribute value to use.
+  -V, --version         Print version information and exit.
+  -x, --http-proxy=<proxyHost>
+                        Host:Port of the proxy server to use.
+Version 1.0.1
+
+
+Exit: 0
+
+```
+
+#### Enable developer account.
+
+```sh
+
+adt update developer -n apideveloper@yopmail.com --enable
+```
+
+Update developer profile
+
+```sh
+adt update developer -n apideveloper@yopmail.com -i ../sample/developer/update-developer.json
 ```
 
 ## Delete Developer
