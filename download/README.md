@@ -12,10 +12,10 @@ chmod +x adt_linux-*
 
 ### Windows
 
-Native Image of ADT for Windows adt_win-x86_64-1.0.1
+Native Image of ADT for Windows adt_win-x86_64-1.0.1.exe
 
 ```sh
-curl -L -O https://raw.githubusercontent.com/ashishkpathak/adt/main/download/adt_win-x86_64-1.0.1
+curl -L -O https://raw.githubusercontent.com/ashishkpathak/adt/main/download/adt_win-x86_64-1.0.1.exe
 
 ```
 ### Mac OS
