@@ -25,10 +25,10 @@ Use List Alert to get the UUIDs of all alerts for an organization.
 
 More information and examples of this API see <a href ="https://docs.apigee.com/api-monitoring/alerts-notifications-api"> Managing Alerts and Notifications</a>
 
-Get Alert with ID
+Get Alert with UUID
 
 ```sh
-adt list alert --alert-id <alert-id>
+adt list alert --alert-id <alert-uuid>
 ```
 
 ## CREATE ALERT
@@ -46,7 +46,17 @@ adt create alert --help
 ```
 
 ```sh
-
+A.D.T
+Operation on Alerts.
+Usage: adt create alert [-hV] -i=<alertConfig> [-x=<proxyHost>]
+ADT is a fast, secure and reliable way to manage your entities on Apigee.
+  -h, --help      Show this help message and exit.
+  -i, --alert-config=<alertConfig>
+                  The alert config location.
+  -V, --version   Print version information and exit.
+  -x, --http-proxy=<proxyHost>
+                  Host:Port of the proxy server to use.
+Version 1.0.1
 ```                            
   
 #### Import an Alert Configuration
@@ -55,13 +65,13 @@ Import an alert configuration file on your local machine to your organization on
 
 
 ```sh
-adt create alert -n <alert-name> --alert-config <alert-config-location>
+adt create alert --alert-config <alert-config-location>
 ```
 
 Example
 
 ```sh
-adt create alert -n "API 5xx error rate" --alert-config ../alert-httpbin-v1/alert-httpbin-v1.json
+adt create alert --alert-config ../alert-httpbin-v1/alert-httpbin-v1.json
 ```
 
 The structure of alert-httpbin-v1 as an example is
@@ -123,10 +133,27 @@ Note:
 
 ### USAGE
 
+
+
+```sh
+A.D.T
+Operation on Alert.
+Usage: adt update alert [-hV] -i=<alertConfig> -n=<alertName> [-x=<proxyHost>]
+ADT is a fast, secure and reliable way to manage your entities on Apigee.
+  -h, --help               Show this help message and exit.
+  -i, --alert-config=<alertConfig>
+                           The alert config location.
+  -n, --name=<alertName>   The Alert UUID
+  -V, --version            Print version information and exit.
+  -x, --http-proxy=<proxyHost>
+                           Host:Port of the proxy server to use.
+Version 1.0.1
+```
+
 Note: You must include all required values, whether or not you are updating them, as well as any optional values that you are updating.
 
 ```sh
-adt update alert -n <alert-name> --alert-config <alert-config-location>
+adt update alert -n <alert-uuid> --alert-config <alert-config-location>
 ```
 
 ## DELETE ALERT
@@ -139,5 +166,19 @@ Edge imposes a quota on this API of 60 calls per minute per organization. This q
 ### USAGE
 
 ```sh
-adt delete alert --alert-id <alert-id>
+A.D.T
+Operation on Alert.
+Usage: adt delete alert [-hV] -n=<alertName> [-x=<proxyHost>]
+ADT is a fast, secure and reliable way to manage your entities on Apigee.
+  -h, --help               Show this help message and exit.
+  -n, --name=<alertName>   The Alert UUID.
+  -V, --version            Print version information and exit.
+  -x, --http-proxy=<proxyHost>
+                           Host:Port of the proxy server to use.
+Version 1.0.1
+```
+
+
+```sh
+adt delete alert -n <alert-uuid>
 ```
