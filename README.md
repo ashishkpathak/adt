@@ -72,11 +72,12 @@ ADT can be used to create, deploy, list.
 ## ✨ Features
 
 - Create an empty API Proxy template, have it created and deployed to Apigee Edge.
-- Validate your proxies/shared-flow policies for XML syntax and consistences.
+- Create and deploy API proxy at the same time.
 - Download API proxy revisions.
 - Query OAuth2.0 tokens
 - Export proxies, shared-flows, products.
-
+- Query Apps for credentials
+  
 ## Installation
 
 ADT
