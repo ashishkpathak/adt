@@ -4,7 +4,7 @@ Manage role-based access in Apigee Edge. User roles form the basis of role-based
 
 Users are associated with one or more user roles. Each user role defines a set of permissions (GET, PUT, DELETE) on RBAC resources (defined by URI paths).
 
-A user role is scoped to an organization.
+A user role is scoped to an organization. 
 
 
 ## Create Operations
