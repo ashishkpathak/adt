@@ -58,6 +58,7 @@ ADT can be used to create, deploy, list.
 - [Analytics^](docs/analytics)
 - [Reports^](docs/reports)
 - [Cache](docs/cache)
+- [Cached Logs](docs/cached-logs)
 - [Tokens](docs/oauth20)
 - [Target Servers](docs/target-servers)
 - [Policies^](docs/policies)
