@@ -20,7 +20,7 @@
             "value": "attrib -xa -cb"
         }
     ],
-    "callbackUrl": "http://callback-2.test.optusnet.com.au",
+    "callbackUrl": "http://callback-2.test.domain.com",
     "name": "app-httpbin",
     "scopes": [],
     "status": "approved"

@@ -1,0 +1,29 @@
+{
+  "apiResources": [
+    "/"
+  ],
+  "approvalType": "auto",
+  "attributes": [{
+      "name": "access",
+      "value": "public"
+    },
+    {
+      "name": "spike.arrest",
+      "value": "10tps"
+    },
+    {
+      "name": "quota.limit",
+      "value": "100pm"
+    }
+  ],
+  "description": "api product httpbin v1 ",
+  "displayName": "api product httpbin v1",
+  "environments": [
+    "dev","sit","sit2"
+  ],
+  "name": "aprod-httpbin-v1",
+  "proxies": [
+    "api-httpbin-proxy-v1"
+  ],
+  "scopes": ["READ","WRITE","ADMIN"]
+}

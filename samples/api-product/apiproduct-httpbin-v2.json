@@ -1,0 +1,36 @@
+{
+  "apiResources": [
+    "/"
+  ],
+  "approvalType": "auto",
+  "attributes": [{
+      "name": "access",
+      "value": "public"
+    },
+    {
+      "name": "spike.arrest",
+      "value": "30tps"
+    },
+    {
+      "name": "quota.limit",
+      "value": "500pm"
+    },
+    {
+      "name": "app-id",
+      "value": "digital"
+    },{
+      "name": "dev-id",
+      "value": "digital-dev"
+    }
+  ],
+  "description": "api product httpbin v2 ",
+  "displayName": "api product httpbin v2",
+  "environments": [
+    "dev","sit","sit2"
+  ],
+  "name": "aprod-httpbin-v2",
+  "proxies": [
+    "api-httpbin-proxy-v2"
+  ],
+  "scopes": []
+}
