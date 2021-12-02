@@ -1,0 +1,27 @@
+{
+    "apiProducts": [
+        "aprod-httpbin-v1","aprod-httpbin-v2"
+    ],
+    "attributes": [
+        {
+            "name": "DisplayName",
+            "value": "ADT-Demo-App"
+        },
+        {
+            "name": "Notes",
+            "value": "Demo httpbin app."
+        },
+        {
+            "name": "PlayGround",
+            "value": "Hockey-123"
+        },
+        {
+            "name": "YeAttrib",
+            "value": "attrib -xa -cb"
+        }
+    ],
+    "callbackUrl": "http://callback-2.test.optusnet.com.au",
+    "name": "app-httpbin",
+    "scopes": [],
+    "status": "approved"
+}

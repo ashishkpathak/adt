@@ -1,0 +1,16 @@
+{
+    "attribute": [
+        {
+            "name": "DisplayName",
+            "value": "ADT-Demo-App"
+        },
+        {
+            "name": "Notes",
+            "value": "Demo httpbin app."
+        },
+        {
+            "name": "PlayGround",
+            "value": "Soccer-123"
+        }
+    ]
+}
