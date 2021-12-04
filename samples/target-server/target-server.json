@@ -1,0 +1,6 @@
+{
+    "host": "example.com",
+    "isEnabled": true,
+    "name": "MyTargetServer",
+    "port": 80
+  }
