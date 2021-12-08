@@ -1,0 +1,10 @@
+{
+    "properties": {
+      "property": [
+        {
+          "name": "subscriptionType",
+          "value": "enterprise"
+        }
+      ]
+    }
+  }

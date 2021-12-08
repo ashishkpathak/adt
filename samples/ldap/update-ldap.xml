@@ -1,0 +1,23 @@
+<LdapResource name="ldap1">
+    <Connection>
+      <Hosts>
+        <Host>foo.com</Host>
+      </Hosts>
+      <SSLEnabled>false</SSLEnabled>
+      <Version>3</Version>
+      <Authentication>simple</Authentication>
+      <ConnectionProvider>unboundid</ConnectionProvider>
+      <ServerSetType>round robin</ServerSetType>
+    </Connection>
+    <ConnectPool enabled="true">
+      <Timeout>50000</Timeout>
+      <Maxsize>50</Maxsize>
+      <Prefsize>30</Prefsize>
+      <Initsize></Initsize>
+      <Protocol></Protocol>
+    </ConnectPool>
+    <Admin>
+      <DN>cn=admin,dc=apigee,dc=com</DN>
+      <Password>secret</Password>
+    </Admin>
+  </LdapResource>

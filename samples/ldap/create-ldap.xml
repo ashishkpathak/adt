@@ -1,0 +1,24 @@
+<LdapResource name="ldap1">
+  <Connection>
+    <Hosts>
+      <Host port="636">foo.com</Host> <!-- port is optional: defaults to 389 for ldap:// and 636 for ldaps:// -->
+    </Hosts>
+    <SSLEnabled>false</SSLEnabled> <!-- optional, defaults to false -->
+    <Version>3</Version> <!-- optional, defaults to 3-->
+    <Authentication>simple</Authentication> <!-- optional, only simple supported -->
+    <ConnectionProvider>jndi|unboundid</ConnectionProvider> <!-- required -->
+    <ServerSetType>single|round robin|failover</ServerSetType> <!-- not applicable for jndi -->
+    <LdapConnectorClass>com.custom.ldap.MyProvider</LdapConnectorClass> <!-- If using a custom LDAP provider, the fully qualified class -->
+  </Connection>
+  <ConnectPool enabled="true"> <!-- enabled is optional, defaults to true -->
+    <Timeout>30000</Timeout> <!-- optional, in milliseconds; if not set, no timeout -->
+    <Maxsize>50</Maxsize> <!-- optional; if not set, no max connections -->
+    <Prefsize>30</Prefsize> <!-- optional; if not set, no pref size -->
+    <Initsize></Initsize> <!-- optional; if not set, defaults to 1 -->
+    <Protocol></Protocol> <!-- optional; if not set, defaults to 'ssl plain' -->
+  </ConnectPool>
+  <Admin>
+    <DN>cn=admin,dc=apigee,dc=com</DN>
+    <Password>secret</Password>
+  </Admin>
+</LdapResource>

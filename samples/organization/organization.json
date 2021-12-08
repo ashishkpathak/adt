@@ -1,0 +1,22 @@
+{
+    "displayName": "myorg",
+    "environments": [
+      "prod",
+      "test",
+      "portal"
+    ],
+    "name": "myorg",
+    "properties": {
+      "property": [
+        {
+          "name": "features.isCpsEnabled",
+          "value": "true"
+        },
+        {
+          "name": "subscriptionType",
+          "value": "enterprise"
+        }
+      ]
+    },
+    "type": "paid"
+  }
