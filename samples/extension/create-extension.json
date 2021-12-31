@@ -1,0 +1,11 @@
+{
+    "name": "ext-foo-aws-lambda",
+    "description": "Foo AWS Lambda extension.",
+    "packageName": "aws-lambda",
+    "version": "1.1.1",
+    "tenant": "org-prod:dev",
+    "state": "DEPLOYED",
+    "configuration": {
+        "region": "ap-southeast-2"
+    }
+}
