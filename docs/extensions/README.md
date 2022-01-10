@@ -24,8 +24,51 @@ Version 1.0.1
 
 ### Usage
 
+## Query Extension
+
+Query public extension packages using the parameters to search for specific values (keywords). To get a list of all extension packages, don't specify any search values. When you get a collection, each item in the collection includes a self property with a URL to the item, including its ID. You can use that ID to retrieve details for a specific extension.
+### Usage 
+```
+A.D.T
+Operation on extension package.
+Usage: adt query extension [-hV] [-c=<count>] [-d=<description>] [-k=<keywords>] [-n=<name>] [--ver=<version>] [-x=<proxyHost>]
+ADT is a fast, secure and reliable way to manage your entities on Apigee.
+  -c, --count=<count>   Response result size. Default value 25
+  -d, --description=<description>
+                        Value to search for in extension descriptions.
+  -h, --help            Show this help message and exit.
+  -k, --keywords=<keywords>
+                        A comma-separated list of keywords to search for in extension keyword properties.
+  -n, --name=<name>     Exact name of an extension to query for.
+  -V, --version         Print version information and exit.
+      --ver=<version>   The version of extension to search. Used only when name is provided.
+  -x, --http-proxy=<proxyHost>
+                        Host:Port of the proxy server to use.
+Version 1.0.1
+
+
+```
+
+### Search by keywords 
+Search by keyword 'salesforce' and return maximum of 10 results.
+
+```
+adt query extension -c 10 -k salesforce
+```
+
+### Search by name and version.
+Gets the permalink for the specified extension package, given name and version.
+
+```
+adt query extension -n salesforce -v 1.0.1
+```
+
+
 
 ## List Extension
+
+
+
 ### Usage
 
 ```
@@ -48,6 +91,8 @@ ADT is a fast, secure and reliable way to manage your entities on Apigee.
 Version 1.0.1
 
 ```
+
+
 
 ## Delete Extension
 

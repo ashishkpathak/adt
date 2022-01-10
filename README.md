@@ -47,6 +47,7 @@ ADT can be used to create, deploy, list.
 - [Shared Flows](docs/shared-flows)
 - [KVM](docs/key-value-maps)
 - [Environments](docs/environments)
+- [Extensions](docs/extensions)
 - [Debug Session](docs/debugsessions)
 - [Developers](docs/developers)
 - [Developer Apps](docs/apps)
