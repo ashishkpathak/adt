@@ -46,7 +46,6 @@ ADT is a fast, secure and reliable way to manage your entities on Apigee.
                         Host:Port of the proxy server to use.
 Version 1.0.1
 
-
 ```
 
 ### Search by keywords 
@@ -92,8 +91,112 @@ Version 1.0.1
 
 ```
 
+### List extension in an environment.
 
+```
+adt list extension -e dev
+```
+
+
+### List extension with a name in an environment.
+
+```
+adt list extension -e dev -n sfc-test
+```
+
+Sample response
+
+```json
+{
+  "kind" : "page",
+  "self" : "https://api.enterprise.apigee.com/v1/organizations/myorg/environments/dev/extensions?nameLike=sfc-test",
+  "contents" : [ {
+    "created" : "2021-12-16T23:28:52.507Z",
+    "createdBy" : "jadmin@domain.com",
+    "updated" : "2021-12-16T23:28:52.507Z",
+    "updatedBy" : "jadmin@domain.com",
+    "kind" : "extension",
+    "self" : "https://api.enterprise.apigee.com/v1/organizations/myorg/environments/dev/extensions/cb001682-9603-4a92-3242-d30727872c03",
+    "name" : "sfc-test",
+    "description" : "Salesforce cloud test",
+    "packageName" : "salesforce",
+    "version" : "1.0.3",
+    "tenant" : "myorg:dev",
+    "state" : "UNDEPLOYED",
+    "regions" : [ "australia-southeast1" ],
+    "etag" : "ee0e748686543fc8b9f5c9a9d30a52"
+  } ],
+  "total" : 1,
+  "totalPages" : 1,
+  "pageOf" : "/extensions"
+}
+Exit: 0
+```
+### List extension with a name in an environment, matching as in SQL query 'like'
+
+```
+adt list extension -e dev -n sfc-test --name-like
+```
+
+
+### List extension with id in an environment
+
+```
+adt list extension -e dev --id cb001682-9603-4a92-3242-d30727872c03
+```
+
+
+### List logs of an extension with id in an environment
+
+```
+adt list extension -e dev --id cb001682-9603-4a92-3242-d30727872c03 --logs
+```
+
+Sample response
+
+```json
+{
+  "kind" : "page",
+  "contents" : [ ],
+  "next" : "EAE4icn2jo39tM6oAUrxAiISIgP_G4Y4GEP-T69wDStoCCrQCSrECANSBz21qGwoMCLzP8o4GEJAvIAx9I9olvKBwY13lOf8B5vaio93OERf5KXDZ6B6wMlhCtcTclyHzC0yRdOnLqmCEAej8JyMUVoKmJb0zZYLO5F9QPrlGKwoQvk3MXz-Jr4qJBHjB1j5kAA83T9ewHZB6J4qqY3C6DClDpcP9B6b6dEYpiZYMT-D-XAsuX7oJYzO5uM_6v8FyMEecKT22rSFTMz0qN1lnCgi7kUsfB8gBldKP-7wrupqn6WkZH656rwzDZ2hA82x-LfVWhupEixtK8X2D1OAiGn16QJX7K252MfIKACoMCUgIb4jN0VYra3tFKmrhjXENHj9t2ClzQg3tqPVejf5vlMpTdg_UGqNZdy-N3CX52bdoEfs5_0_g484YpjhoeXdWAChYe82joJODRW-Xu1n_N4SFhoGCICYx44GIgwI_8bhjgYQ_5Pr3ANQ2Neh4Nn0uoSwAVIHCODms6rdF2D73ee9kP2318wDEgcIBxD7-qAAgAYIGA",
+  "total" : 0,
+  "totalPages" : 0
+}
+Exit: 0
+```
 
 ## Delete Extension
 
+Deletes all extensions in an environment or by extension id. 
 ### Usage
+
+```sh
+A.D.T
+Operation on Extension. Deletes all extensions in an environment.
+Usage: adt delete extension [-hV] -e=<environment> [-i=<id>] [-x=<proxyHost>]
+ADT is a fast, secure and reliable way to manage your entities on Apigee.
+  -e, --env=<environment>   The extension environment.
+  -h, --help                Show this help message and exit.
+  -i, --id=<id>             The extension id.
+  -V, --version             Print version information and exit.
+  -x, --http-proxy=<proxyHost>
+                            Host:Port of the proxy server to use.
+Version 1.0.1
+
+
+Exit: 0
+```
+### Deletes all extensions in an environment.
+
+```sh
+adt delete extension -e dev
+```
+
+
+### Deletes an extension.
+
+When you retrieve a list of extensions, each extension in the collection includes a self property with a URL to the extension, including its ID. Use that ID value in this request.
+
+```sh
+adt delete extension -e dev --id db001682-9603-4a92-3242-d30727872c03
+```
