@@ -1,301 +1,173 @@
 {
   "resourcePermission" : [ {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/",
     "permissions" : [ "get" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/apps",
     "permissions" : ["get" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/reports",
     "permissions" : [ "put", "get" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/apps/*",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/companies",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/developers",
     "permissions" : [ "put", "get" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/apiproducts",
     "permissions" : [ "put", "get" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/reports/*",
     "permissions" : [ "get" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/applications",
     "permissions" : [ "put", "get" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments",
     "permissions" : [ "get" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/developers/*",
     "permissions" : [ "get" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/apiproducts/*",
     "permissions" : [ "get" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/applications/*",
     "permissions" : [ "delete", "put", "get" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/*",
     "permissions" : [ "get" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/companies/*/apps",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/developers/*/apps",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/companies/*/apps/*",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/developers/*/apps/*",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/dev/caches",
     "permissions" : [ "put" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/pet/caches",
     "permissions" : [ "put" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/ppt/caches",
     "permissions" : [ "put" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/uat/caches",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit3/caches",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit4/caches",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit5/caches",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit6/caches",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit7/caches",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit8/caches",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/*/virtualhosts",
     "permissions" : [ "get" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/dev/caches/*",
     "permissions" : [ "delete", "put" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/pet/caches/*",
     "permissions" : [ "delete", "put" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/ppt/caches/*",
     "permissions" : [ "delete", "put" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit/caches/*",
     "permissions" : [ "put" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/uat/caches/*",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit2/caches/*",
     "permissions" : [ "put" ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit3/caches/*",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit4/caches/*",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit5/caches/*",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit6/caches/*",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit7/caches/*",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/sit8/caches/*",
     "permissions" : [ ]
   }, {
-    "organization" : "optus-enterprise-nonprod",
+    "organization" : "organization",
     "path" : "/environments/*/virtualhosts/*",
     "permissions" : [ "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/applications/api-customer-interaction-management",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/applications/api-bill-inquiry-add-one-time-charge",
-    "permissions" : [ "delete", "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/dev/applications/*/revisions/*/deployments",
-    "permissions" : [ "delete", "put" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/pet/applications/*/revisions/*/deployments",
-    "permissions" : [ "delete", "put" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/ppt/applications/*/revisions/*/deployments",
-    "permissions" : [ "delete", "put" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit/applications/*/revisions/*/deployments",
-    "permissions" : [ "delete", "put" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/dev/applications/*/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/pet/applications/*/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/ppt/applications/*/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit2/applications/*/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/ppt/applications/api-customer-interaction-management/revisions/*/deployments",
-    "permissions" : [ "delete", "put" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit/applications/api-customer-interaction-management/revisions/*/deployments",
-    "permissions" : [ "delete", "put" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/dev/applications/api-bill-inquiry-add-one-time-charge/revisions/*/deployments",
-    "permissions" : [ "delete", "put" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/pet/applications/api-bill-inquiry-add-one-time-charge/revisions/*/deployments",
-    "permissions" : [ "delete", "put" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/ppt/applications/api-bill-inquiry-add-one-time-charge/revisions/*/deployments",
-    "permissions" : [ "delete", "put" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/dev/applications/api-customer-interaction-management/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/pet/applications/api-customer-interaction-management/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit5/applications/api-bill-inquiry-add-one-time-charge/revisions/*/deployments",
-    "permissions" : [ "delete", "put" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit6/applications/api-bill-inquiry-add-one-time-charge/revisions/*/deployments",
-    "permissions" : [ "delete", "put" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit7/applications/api-bill-inquiry-add-one-time-charge/revisions/*/deployments",
-    "permissions" : [ "delete", "put" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit8/applications/api-bill-inquiry-add-one-time-charge/revisions/*/deployments",
-    "permissions" : [ "delete", "put" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/dev/applications/api-bill-inquiry-add-one-time-charge/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/pet/applications/api-bill-inquiry-add-one-time-charge/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/ppt/applications/api-bill-inquiry-add-one-time-charge/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit2/applications/api-customer-interaction-management/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit3/applications/api-customer-interaction-management/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit/applications/api-bill-inquiry-add-one-time-charge/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit2/applications/api-bill-inquiry-add-one-time-charge/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit3/applications/api-bill-inquiry-add-one-time-charge/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit4/applications/api-bill-inquiry-add-one-time-charge/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit7/applications/api-bill-inquiry-add-one-time-charge/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  }, {
-    "organization" : "optus-enterprise-nonprod",
-    "path" : "/environments/sit8/applications/api-bill-inquiry-add-one-time-charge/revisions/*/debugsessions",
-    "permissions" : [ "put", "get" ]
-  } 
+  }
 
 ]
 }
