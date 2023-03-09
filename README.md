@@ -52,7 +52,7 @@ ADT can be used to create, deploy, list.
 - [Developers](docs/developers)
 - [Developer Apps](docs/apps)
 - [Deployments](docs/deployments)
-- [DataMasks](docs/datamasks)
+- [DataMasks](docs/data-masks)
 - [Company Apps](docs/apps)
 - [Users](docs/users)
 - [Roles](docs/roles)
