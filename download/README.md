@@ -3,10 +3,10 @@
 
 ### Linux
 
-Native Image of ADT for Linux adt_linux-x86_64-1.1.0
+Native Image of ADT for Linux adt_linux-arm64-1.3.0
 
 ```sh
-curl -L -O https://raw.githubusercontent.com/ashishkpathak/adt/main/download/adt_linux-x86_64-1.1.0
+curl -L -O https://raw.githubusercontent.com/ashishkpathak/adt/main/download/adt_linux-arm64-1.3.0
 chmod +x adt_linux-*
 ```
 
@@ -23,7 +23,7 @@ curl -L -O https://raw.githubusercontent.com/ashishkpathak/adt/main/download/adt
 Native Image of ADT for Mac adt_osx-x86_64-1.1.0
 
 ```sh
-curl -L -O https://raw.githubusercontent.com/ashishkpathak/adt/main/download/adt_osx-x86_64-1.1.0
+curl -L -O https://raw.githubusercontent.com/ashishkpathak/adt/main/download/adt_osx-arm64-1.3.0
 chmod +x adt_osx-*
-sudo xattr -r -d com.apple.quarantine adt_osx-x86_64-1.1.0
+sudo xattr -r -d com.apple.quarantine adt_osx-arm64-1.3.0
 ```
